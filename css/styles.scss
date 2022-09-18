@@ -67,7 +67,7 @@ $grisclaro:rgb(186, 186, 186);
 .footer{
     background-color: #131313;
     width: 100%;
-    height: 24vh;
+    height: auto;
     .foot{
         display: flex;
         align-items: center;
@@ -272,7 +272,7 @@ $grisclaro:rgb(186, 186, 186);
         padding-bottom: 100px;
         display: grid;
         grid-template-columns: 1fr ;
-        grid-template-rows: 10% 80% 10% ;
+        grid-template-rows: 10% 80%;
         h3{
             text-align: center;
             font-size: 50px;
@@ -281,19 +281,16 @@ $grisclaro:rgb(186, 186, 186);
             font-weight:800;
             text-shadow: 3px 0px 3px $celestemedio;
         }
-        p{
-            grid-row: 3/4;
-            text-align: center;
-            font-size: 30px;
-            color: $celestemedio;
-            font-family:'Kanit', sans-serif;
-            text-shadow: 1.5px 0px 2px $blanco;
-        }
         .historia{
             background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
             background-size: cover; 
             height: 800px;
             width: 100%;
+            grid-row: 2/3;
+            text-align:center;
+            font-size: 30px;
+            color: $celestemedio;
+            font-family:'Kanit', sans-serif;
         }
     }
 }
@@ -1315,1024 +1312,317 @@ $grisclaro:rgb(186, 186, 186);
 #colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve{
     display: none;
 }
-@media only screen and (max-width:375px) {
-    .header{
-    .logo{
-        font-size: 50px;
-    }
-    .headertitle{
-        font-size: 30px;
-    }
-    .redes{
-        font-size: 15px;
-    }
-    }
-    nav{
-        nav ul li:hover{
-            padding-right: 0px;
-            background-color: #252525;
-        }
-        .nav:hover{
-            padding-right: 0px;
-            border: solid 6px #252525;
-        }
-    }
-    nav ul li{
-        font-size: 12px;
-        padding-right: 6px;
-        margin: 6px;
-    }
-    a{
-        text-decoration: none;
-        color: #000000;
-    }
-    .main{
-        height: calc(100vh - 130.4px);
-        grid-gap: 20px;
-        padding: 10px;
-        .trailer{
-            height: 200px;
-            width: 250px;
-            justify-self: right;
-            grid-column: 3/4;
-            grid-row: 1/2;
-        }
-        .critics{
-            justify-self: center;
-            font-size: 10px;
-            grid-column: 3/4;
-            grid-row: 2/3;
-        }
-        .sinopsis{
-            font-size:12px;
-            grid-column: 1/4;
-            grid-row: 2/3;
-        }
-    }
-    
-    footer{
-        background-color:$backgroundcolor;
-        background-size: cover;
-        text-align: center;
-        footer ul li:hover{
-            padding-right: 0px;
-            background-color: #252525;
-        }
-        a{
-            text-decoration: none;
-            color: #131313;
-        }
-        .foot:hover{
-            color:$blanco;
-            padding-right: 0px;
-            background-color: #252525;
-            border: solid 6px #252525;
-        }
-    }
-    footer ul li{
-        font-size: 12px;
-        padding-right: 6px;
-        margin: 8px;
-    }
-    .nosotros{
-        height: calc(100vh - 130.4px);
-        grid-gap: 20px;
-        padding: 15px;
-        .nostitle{
-            font-size: 30px;
-        }
-        .historia{
-            font-size: 12px;
-            background-position: 0px -250px;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .valores{
-            font-size: 12px;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .metas{
-            font-size: 12px;
-            background-position: 0px -800px;
-            padding: 10px;
-            border-radius: 10px;
-        }
-    }
-    .juegos{
-        height: calc(100vh - 130.4px);
-        padding: 10px;
-        .titulo-games{
-            font-size: 20px;
-        }
-        .galeria{
-            display: grid;
-            grid-template-columns:  repeat(3 , 1fr);
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-gap: 20px;
-            margin: 5px;
-            padding: 10px;
-            transform: skewX(-1.5deg);
-        }
-        
-    }
-    .formulario{
-        height:calc(100vh - 130.4px);
-        padding: 0px;
-        .contactotitle{
-            font-size: 20px;
-            margin: 10px;
-        }
-        .eres{
-            font-size: 10px;
-            padding: 10px;
-        }
-        .eres input{
-            height: 15px;
-            width: 15px;
-        }
-        .datos{
-            font-size: 10px;
-        }
-        .datos input{
-            padding: 2px;
-            font-size: 15px;
-            height: 25px;
-            width: 100px;
-        }
-        .comentarios{
-            font-size: 10px;
-        }
-        textarea {
-            height: 100px;
-            font-size: 20px;
-        }
-        .buttons{
-            grid-row: 5/6;
-            justify-self: center;
-        }
-        .formu h2{
-            padding-top: 20px;
-        }
-    }
-    .store{
-        height: calc(100vh - 130.4px);
-        padding: 0px;
-        .remeras{
-            font-size: 20px;
-        }
-        .hombres{
-            font-size: 20px;
-        }
-        .galeriast{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows:1fr;
-            grid-gap: 10px;
-            padding: 10px;
-        }
-        .galeriast input{
-            height: 10px;
-            width: 10px;
-        }
-        .galeriast article:hover{
-            border-color:$naranjavibrante;
-            border-width: 20px;
-        }
-        .item1{
-            height: 50px;
-            width: 40px;
-        }
-        .remera1{
-            border-width: 10px;
-            border-radius: 10px;
-            font-size: 15px;
-        }
-        .item2{
-            height: 50px;
-            width: 40px;
-        }
-        .remera2{
-            border-width: 10px;
-            border-radius: 10px;
-            font-size: 15px;
-        }
-        .item3{
-            height: 70px;
-            width: 40px;
-        }
-        .remera3{
-            border-width: 10px;
-            border-radius: 10px;
-            font-size: 15px;
-            }
-        }
-}
 @media only screen and (min-width:375px) and (max-width:970px) {
     .header{
-        .logo{
-            font-size: 50px;
-        }
-        .headertitle{
-            font-size: 30px;
-        }
-        .redes{
-            font-size: 15px;
-        }
-        }
-        nav{
-            nav ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            .nav:hover{
-                padding-right: 0px;
-                border: solid 6px #252525;
-            }
-        }
-        nav ul li{
-            font-size: 12px;
-            padding-right: 6px;
-            margin: 6px;
-        }
-        a{
+        width: 100%;
+    }
+    .navegador{
+        background-color: #0074C2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: 0px;
+        :hover{
+            background-color: $backgroundcolor;
+            color: $blanco;
             text-decoration: none;
-            color: #000000;
-        }
-        .main{
-            height: calc(100vh - 130.4px);
-            grid-gap: 20px;
-            padding: 10px;
-            .trailer{
-                height: 200px;
-                width: 250px;
-                justify-self: right;
-                grid-column: 3/4;
-                grid-row: 1/2;
+        }    
+    }
+    .nav{
+        font-size: 20px;
+    }
+    .footer{
+        .foot{
+            .logo-footer{
+                height: 150px;
             }
-            .critics{
-                justify-self: center;
-                font-size: 10px;
-                grid-column: 3/4;
-                grid-row: 2/3;
-            }
-            .sinopsis{
-                font-size:12px;
-                grid-column: 1/4;
-                grid-row: 2/3;
-            }
-        }
-        
-        footer{
-            background-color:$backgroundcolor;
-            background-size: cover;
-            text-align: center;
-            footer ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            a{
-                text-decoration: none;
-                color: #131313;
-            }
-            .foot:hover{
-                color:$blanco;
-                padding-right: 0px;
-                background-color: #252525;
-                border: solid 6px #252525;
-            }
-        }
-        footer ul li{
-            font-size: 12px;
-            padding-right: 6px;
-            margin: 8px;
-        }
-        .nosotros{
-            height: calc(100vh - 130.4px);
-            grid-gap: 20px;
-            padding: 15px;
-            .nostitle{
+            .redes{
                 font-size: 30px;
-            }
-            .historia{
-                font-size: 12px;
-                background-position: 0px -250px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .valores{
-                font-size: 12px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .metas{
-                font-size: 12px;
-                background-position: 0px -800px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-        }
-        .juegos{
-            height: calc(100vh - 130.4px);
-            padding: 10px;
-            .gamestitle{
-                font-size: 20px;
-            }
-            .galeria{
-                display: grid;
-                grid-template-columns:  repeat(3 , 1fr);
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-gap: 20px;
-                margin: 5px;
-                padding: 10px;
-                transform: skewX(-1.5deg);
-            }
-            .game{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d2.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game:hover{
-                background-image: url(../multimedia/d2.jpg);
-            }
-            .game2{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d1.jpg);
-                background-size: cover;
-                background-position:center;
-                border-radius: 1px;
-            }
-            .game2:hover{
-                background-image: url(../multimedia/d1.jpg);
-            }
-            .game3{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d3.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game3:hover{
-                background-image: url(../multimedia/d3.jpg);
-            }
-            .game4{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d6.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game4:hover{
-                background-image: url(../multimedia/d6.jpg);
-            }
-            .game5{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/cod.jpg);
-                background-size: cover;
-                background-position: left;
-                border-radius: 1px;
-            }
-            .game5:hover{
-                background-image: url(../multimedia/cod.jpg);
-            }
-            .dragonquest{
-                grid-column: 1/2;
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/ds2.jpg);
-            }
-            .dragonquest:hover{
-                background-image: url(../multimedia/ds2.jpg);
-            }
-            .dragonquest h2{
-                font-size: 15px;
-            }
-        }
-        .formulario{
-            height:calc(100vh - 130.4px);
-            padding: 0px;
-            .contactotitle{
-                font-size: 20px;
-                margin: 10px;
-            }
-            .eres{
-                font-size: 10px;
-                padding: 10px;
-            }
-            .eres input{
-                height: 15px;
-                width: 15px;
-            }
-            .datos{
-                font-size: 10px;
-            }
-            .datos input{
-                padding: 2px;
-                font-size: 15px;
-                height: 25px;
-                width: 100px;
-            }
-            .comentarios{
-                font-size: 10px;
-            }
-            textarea {
-                height: 100px;
-                font-size: 20px;
-            }
-            .buttons{
-                grid-row: 5/6;
-                justify-self: center;
-            }
-            .formu h2{
-                padding-top: 20px;
-            }
-        }
-        .store{
-            height: calc(100vh - 130.4px);
-            padding: 0px;
-            .remeras{
-                font-size: 20px;
-            }
-            .hombres{
-                font-size: 20px;
-            }
-            .galeriast{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows:1fr;
-                grid-gap: 10px;
-                padding: 10px;
-            }
-            .galeriast input{
-                height: 10px;
-                width: 10px;
-            }
-            .galeriast article:hover{
-                border-color:$naranjavibrante;
-                border-width: 20px;
-            }
-            .item1{
-                height: 50px;
-                width: 40px;
-            }
-            .remera1{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item2{
-                height: 50px;
-                width: 40px;
-            }
-            .remera2{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item3{
-                height: 55px;
-                width: 40px;
-            }
-            .remera3{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
+                .redes-titulo{
+                    font-size: 20px;
+                    h4{
+                        font-size: 20px;
+                    }
                 }
             }
+        }
+        .copyright{
+            font-size: 20px;
+        }
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        .lanzamiento{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            .trailer-boton{
+                height: 50px;
+                width: 50px;
+                .fa-youtube{
+                    font-size: 100px;
+                }
+            }
+            .trailer-boton:focus{
+                .zelda-gif{
+                    width: 350px;
+                    height: 200px;
+                }
+            }
+        }
+        .mainjuegos{   
+            .multimediajuegos{
+                grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+                grid-template-rows: 200px 200px 200px;
+                padding: 50px;
+                .metalgear{
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    background-image: url(../multimedia/mgs1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contenedor-juegos{
+                    background-size: 500px;
+                    background-position: 280px;
+                    height: 200px;
+                    .logo-juegos{
+                        height: 100px;
+                        translate: 20px 70px;
+                    }
+                }
+            }
+        }
+        #nosotros{
+            width: auto;
+            height: 400px;
+            padding-bottom: 20px;
+            grid-template-rows: 10% 80%;
+            h3{
+                font-size: 30px;
+                font-weight:600;
+                text-shadow: 1px 0px 1px $celestemedio;
+            }
+            .historia{
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+                background-size: cover; 
+                height: auto;
+                width: auto;
+                font-size: 15px;
+            }
+        }
+    }
 }
 @media only screen and (min-width:971px) and (max-width:1400px) {
     .header{
-        .logo{
-            font-size: 80px;
-        }
-        .headertitle{
-            font-size: 40px;
-        }
-        .redes{
-            font-size: 30px;
-        }
-        }
-        nav{
-            nav ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            .nav:hover{
-                padding-right: 0px;
-                border: solid 6px #252525;
-            }
-        }
-        nav ul li{
-            font-size: 20px;
-            padding-right: 6px;
-            margin: 6px;
-        }
-        a{
+        width: 100%;
+    }
+    .navegador{
+        background-color: #0074C2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: 0px;
+        :hover{
+            background-color: $backgroundcolor;
+            color: $blanco;
             text-decoration: none;
-            color: #000000;
-        }
-        .main{
-            height: calc(100vh - 172px);
-            grid-gap: 20px;
-            padding: 10px;
-            .trailer{
-                height: 200px;
-                width: 250px;
-                justify-self: left;
-                grid-column: 3/4;
-                grid-row: 1/2;
+        }    
+    }
+    .nav{
+        font-size: 20px;
+    }
+    .footer{
+        .foot{
+            .logo-footer{
+                height: 150px;
             }
-            .critics{
-                justify-self: center;
-                font-size: 12px;
-                grid-column: 3/4;
-                grid-row: 2/3;
-            }
-            .sinopsis{
-                font-size:20px;
-                grid-column: 1/4;
-                grid-row: 2/3;
-            }
-        }
-        
-        footer{
-            background-color:$backgroundcolor;
-            background-size: cover;
-            text-align: center;
-            footer ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            a{
-                text-decoration: none;
-                color: #131313;
-            }
-            .foot:hover{
-                color:$blanco;
-                padding-right: 0px;
-                background-color: #252525;
-                border: solid 6px #252525;
-            }
-        }
-        footer ul li{
-            font-size: 20px;
-            padding-right: 6px;
-            margin: 8px;
-        }
-        .nosotros{
-            height: calc(100vh - 172px);
-            grid-gap: 20px;
-            padding: 15px;
-            .nostitle{
+            .redes{
                 font-size: 30px;
-            }
-            .historia{
-                font-size: 16px;
-                background-position: 0px -250px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .valores{
-                font-size: 16px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .metas{
-                font-size: 16px;
-                background-position: 0px -800px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-        }
-        .juegos{
-            height: calc(100vh - 172px);
-            padding: 10px;
-            .gamestitle{
-                font-size: 20px;
-            }
-            .galeria{
-                display: grid;
-                grid-template-columns:  repeat(3 , 1fr);
-                grid-template-rows: 2fr 2fr 1fr;
-                grid-gap: 10px;
-                margin: 5px;
-                padding: 10px;
-                transform: skewX(-1.5deg);
-            }
-            .game{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d2.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game:hover{
-                background-image: url(../multimedia/d2.jpg);
-            }
-            .game2{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d1.jpg);
-                background-size: cover;
-                background-position:center;
-                border-radius: 1px;
-            }
-            .game2:hover{
-                background-image: url(../multimedia/d1.jpg);
-            }
-            .game3{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d3.jpg);
-                background-size: cover;
-                background-position: center;
-                border-radius: 1px;
-            }
-            .game3:hover{
-                background-image: url(../multimedia/d3.jpg);
-            }
-            .game4{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d6.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game4:hover{
-                background-image: url(../multimedia/d6.jpg);
-            }
-            .game5{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/cod.jpg);
-                background-size: cover;
-                background-position: left;
-                border-radius: 1px;
-            }
-            .game5:hover{
-                background-image: url(../multimedia/cod.jpg);
-            }
-            .dragonquest{
-                grid-column: 1/2;
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/ds2.jpg);
-            }
-            .dragonquest:hover{
-                background-image: url(../multimedia/ds2.jpg);
-            }
-            .dragonquest h2{
-                font-size: 25px;
-            }
-        }
-        .formulario{
-            height:calc(100vh - 172px);
-            padding: 0px;
-            .contactotitle{
-                font-size: 20px;
-                margin: 10px;
-            }
-            .eres{
-                font-size: 15px;
-                padding: 0px;
-            }
-            .eres input{
-                height: 15px;
-                width: 15px;
-            }
-            .datos{
-                font-size: 15px;
-            }
-            .datos input{
-                padding: 2px;
-                font-size: 15px;
-                height: 25px;
-                width: 100px;
-            }
-            .comentarios{
-                font-size: 15px;
-            }
-            textarea {
-                height: 100px;
-                font-size: 20px;
-            }
-            .buttons{
-                grid-row: 5/6;
-                justify-self: center;
-            }
-            .formu h2{
-                padding-top: 10px;
-            }
-        }
-        .store{
-            height: calc(100vh - 172px);
-            padding: 10px;
-            grid-template-rows: 10% 10% 1fr;
-            .remeras{
-                font-size: 20px; 
-                margin: 100px;
-            }
-            .hombres{
-                font-size: 20px;
-            }
-            .galeriast{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows:1fr;
-                grid-gap: 10px;
-                padding: 10px;
-            }
-            .galeriast input{
-                height: 10px;
-                width: 10px;
-            }
-            .galeriast article:hover{
-                border-color:$naranjavibrante;
-                border-width: 20px;
-            }
-            .item1{
-                height: 150px;
-                width: 120px;
-            }
-            .remera1{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item2{
-                height: 150px;
-                width: 120px;
-            }
-            .remera2{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item3{
-                height: 150px;
-                width: 120px;
-            }
-            .remera3{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
+                .redes-titulo{
+                    font-size: 20px;
+                    h4{
+                        font-size: 20px;
+                    }
                 }
             }
+        }
+        .copyright{
+            font-size: 20px;
+        }
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        .lanzamiento{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            height: 100vh;
+            .trailer-boton{
+                height: 50px;
+                width: 50px;
+                .fa-youtube{
+                    font-size: 100px;
+                }
+            }
+            .trailer-boton:focus{
+                .zelda-gif{
+                    width: 700px;
+                    height: 500px;
+                }
+            }
+        }
+        .mainjuegos{   
+            .multimediajuegos{
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                padding: 70px;
+                grid-template-rows: 300px 300px 300px;
+                .metalgear{
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    background-image: url(../multimedia/mgs1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contenedor-juegos{
+                    background-size: 500px;
+                    background-position: center;
+                    height: 100%;
+                    .logo-juegos{
+                        height: 100px;
+                        translate: 100px 120px;
+                    }
+                }
+            }
+        }
+        #nosotros{
+            width: auto;
+            height: 300px;
+            padding-bottom: 10px;
+            grid-template-rows: 15% 90%;
+            h3{
+                font-size: 30px;
+                font-weight:600;
+                text-shadow: 1px 0px 1px $celestemedio;
+            }
+            .historia{
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+                background-size: cover; 
+                height: auto;
+                width: auto;
+                font-size: 15px;
+            }
+        }
+    }
 }
 @media only screen and (min-width:1400px) and (max-width:2560px) {
-        .header{
-        .logo{
-            font-size: 120px;
-        }
-        .headertitle{
-            font-size: 70px;
-        }
-        .redes{
-            font-size: 50px;
-        }
-        }
-        nav{
-            nav ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            .nav:hover{
-                padding-right: 0px;
-                border: solid 6px #252525;
-            }
-        }
-        nav ul li{
-            font-size: 30px;
-            padding-right: 20px;
-            margin: 6px;
-        }
-        a{
+    .header{
+        width: 100%;
+    }
+    .navegador{
+        background-color: #0074C2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: 0px;
+        :hover{
+            background-color: $backgroundcolor;
+            color: $blanco;
             text-decoration: none;
-            color: #000000;
-        }
-        .main{
-            height: calc(100vh - 271.2px);
-            grid-gap: 20px;
-            padding: 10px;
-            .trailer{
-                height: 200px;
-                width: 300px;
-                justify-self: left;
-                grid-column: 3/4;
-                grid-row: 1/2;
+        }    
+    }
+    .nav{
+        font-size: 20px;
+    }
+    .footer{
+        .foot{
+            .logo-footer{
+                height: 150px;
             }
-            .critics{
-                justify-self: center;
-                font-size: 15px;
-                grid-column: 3/4;
-                grid-row: 2/3;
-            }
-            .sinopsis{
-                font-size:20px;
-                grid-column: 1/4;
-                grid-row: 2/3;
-            }
-        }
-        
-        footer{
-            background-color:$backgroundcolor;
-            background-size: cover;
-            text-align: center;
-            footer ul li:hover{
-                padding-right: 0px;
-                background-color: #252525;
-            }
-            a{
-                text-decoration: none;
-                color: #131313;
-            }
-            .foot:hover{
-                color:$blanco;
-                padding-right: 0px;
-                background-color: #252525;
-                border: solid 6px #252525;
-            }
-        }
-        footer ul li{
-            font-size: 30px;
-            padding-right: 20px;
-            margin: 8px;
-        }
-        .nosotros{
-            height: calc(100vh - 271.2px);
-            grid-gap: 20px;
-            padding: 15px;
-            .nostitle{
+            .redes{
                 font-size: 30px;
-            }
-            .historia{
-                font-size: 15px;
-                background-position: 0px -80px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .valores{
-                font-size: 15px;
-                background-position: 0px -460px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .metas{
-                font-size: 15px;
-                background-position: 0px -1700px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-        }
-        .juegos{
-            height: calc(100vh - 271.2px);
-            padding: 10px;
-            .gamestitle{
-                font-size: 40px;
-            }
-            .galeria{
-                display: grid;
-                grid-template-columns:  repeat(6, 1fr);
-                grid-template-rows: 1fr;
-                grid-gap: 20px;
-                margin: 5px;
-                padding: 15px;
-                transform: skewX(-1.5deg);
-            }
-            .game{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d2.jpg);
-                background-size: cover;
-                background-position:top;
-                border-radius: 1px;
-            }
-            .game:hover{
-                background-image: url(../multimedia/d2.jpg);
-            }
-            .game2{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d1.jpg);
-                background-size: cover;
-                background-position:-1200px;
-                border-radius: 1px;
-            }
-            .game2:hover{
-                background-image: url(../multimedia/d1.jpg);
-            }
-            .game3{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d3.jpg);
-                background-size: cover;
-                background-position: center;
-                border-radius: 1px;
-            }
-            .game3:hover{
-                background-image: url(../multimedia/d3.jpg);
-            }
-            .game4{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/d6.jpg);
-                background-size: cover;
-                background-position: top;
-                border-radius: 1px;
-            }
-            .game4:hover{
-                background-image: url(../multimedia/d6.jpg);
-            }
-            .game5{
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/cod.jpg);
-                background-size: cover;
-                background-position: 0px;
-                border-radius: 1px;
-            }
-            .game5:hover{
-                background-image: url(../multimedia/cod.jpg);
-            }
-            .dragonquest{
-                grid-column: 1/2;
-                background-image:linear-gradient(rgba(255, 255, 255, 0) , #252525 90%) , url(../multimedia/ds2.jpg);
-                background-position: 0px;
-            }
-            .dragonquest:hover{
-                background-image: url(../multimedia/ds2.jpg);
-            }
-            .dragonquest h2{
-                font-size: 30px;
-            }
-        }
-        .formulario{
-            height:calc(100vh - 271.2px);
-            padding: 10px;
-            .contactotitle{
-                font-size: 20px;
-                margin: 10px;
-            }
-            .eres{
-                font-size: 20px;
-                padding: 0px;
-            }
-            .eres input{
-                height: 20px;
-                width: 20px;
-            }
-            .datos{
-                font-size: 20px;
-            }
-            .datos input{
-                padding: 2px;
-                font-size: 15px;
-                height: 25px;
-                width: 150px;
-            }
-            .comentarios{
-                font-size: 20px;
-            }
-            textarea {
-                height: 100px;
-                width: 300px;
-                font-size: 20px;
-            }
-            .buttons{
-                grid-row: 5/6;
-                justify-self: center;
-            }
-            .formu h2{
-                padding-top: 20px;
-            }
-        }
-        .store{
-            height: calc(100vh - 271.2px);
-            padding: 10px;
-            grid-template-rows: 10% 10% 1fr;
-            .remeras{
-                font-size: 20px; 
-                margin: 100px;
-            }
-            .hombres{
-                font-size: 20px;
-            }
-            .galeriast{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows:1fr;
-                grid-gap: 10px;
-                padding: 10px;
-            }
-            .galeriast input{
-                height: 20px;
-                width: 20px;
-            }
-            .galeriast article:hover{
-                border-color:$naranjavibrante;
-                border-width: 20px;
-            }
-            .item1{
-                height: 200px;
-                width: 150px;
-            }
-            .remera1{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item2{
-                height: 200px;
-                width: 150px;
-            }
-            .remera2{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-            .item3{
-                height: 200px;
-                width: 150px;
-            }
-            .remera3{
-                border-width: 10px;
-                border-radius: 10px;
-                font-size: 15px;
+                .redes-titulo{
+                    font-size: 20px;
+                    h4{
+                        font-size: 20px;
+                    }
                 }
             }
+        }
+        .copyright{
+            font-size: 20px;
+        }
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        .lanzamiento{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            height: 100vh;
+            .trailer-boton{
+                height: 50px;
+                width: 50px;
+                .fa-youtube{
+                    font-size: 100px;
+                }
+            }
+            .trailer-boton:focus{
+                .zelda-gif{
+                    width: 700px;
+                    height: 500px;
+                }
+            }
+        }
+        .mainjuegos{   
+            .multimediajuegos{
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                padding: 70px;
+                grid-template-rows: 300px 300px 300px;
+                .metalgear{
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    background-image: url(../multimedia/mgs1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contenedor-juegos{
+                    background-size: 500px;
+                    background-position: center;
+                    height: 100%;
+                    .logo-juegos{
+                        height: 100px;
+                        translate: 100px 120px;
+                    }
+                }
+            }
+        }
+        #nosotros{
+            width: auto;
+            height: 300px;
+            padding-bottom: 10px;
+            grid-template-rows: 15% 90%;
+            h3{
+                font-size: 30px;
+                font-weight:600;
+                text-shadow: 1px 0px 1px $celestemedio;
+            }
+            .historia{
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+                background-size: cover; 
+                height: auto;
+                width: auto;
+                font-size: 15px;
+            }
+        }
+    }
 }
