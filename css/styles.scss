@@ -1498,7 +1498,7 @@ $grisclaro:rgb(186, 186, 186);
             padding: 0px;
         }
         .redes-formulario{
-            width: 100%;
+            width: 80%;
         }
         .formulario{
             margin: 20px 00px 20px 0px;
@@ -1510,94 +1510,94 @@ $grisclaro:rgb(186, 186, 186);
                 .label-datos{
                     font-size: 50px;
                 }
-                .input-datos{
-                    font-size: 30px;
+                .input-datos{  
+                    font-size: 20px;
                     height: 50px;
-                    width: 700px;
+                    width: 300px;
                 }
             }
             .comentarios{
-                padding: 20px;
+                padding: 10px 10px 10px 20px;
                 .textarea{
-                    font-size: 30px;
+                    font-size: 20px;
                     height: 200px;
-                    width: 700px;
+                    width: 300px;
                 }
             }
             .botones{
-                padding: 10px;
-                font-size: 20px;
+                padding: 0px;
+                font-size: 15px;
             }
         }
         .redes{
             .insta{
-                height: 100px;
-                width: 100px;
-                font-size: 80px;
+                height: 80px;
+                width: 80px;
+                font-size:60px;
             }
             .insta:hover{
-                height: 150px;
-                width: 100vh;
-                font-size: 100px;
+                height: 80px;
+                width: 50vh;
+                font-size: 50px;
                 .titulo-insta{
-                    padding: 20px;
-                    font-size: 80px;
+                    padding: 20px 20px 20px 10px;
+                    font-size: 25px;
                 }
             }
             .twitter{
-                height: 100px;
-                width: 100px;
-                font-size: 80px;
+                height: 80px;
+                width: 80px;
+                font-size:60px;
             }
             .twitter:hover{
-                height: 150px;
-                width: 100vh;
-                font-size: 100px;
+                height: 80px;
+                width: 50vh;
+                font-size: 50px;
                 .titulo-twitter{
-                    padding: 20px;
-                    font-size: 60px;
+                    padding: 20px 20px 20px 10px;
+                    font-size: 23px;
                 }
             }
             .youtube{
-                height: 100px;
-                width: 100px;
-                font-size: 80px;
+                height: 80px;
+                width: 80px;
+                font-size:60px;
             }
             .youtube:hover{
-                height: 150px;
-                width: 100vh;
-                font-size: 100px;
+                height: 80px;
+                width: 50vh;
+                font-size: 50px;
                 .titulo-youtube{
-                    padding: 20px;
-                    font-size: 80px;
+                    padding: 20px 20px 20px 10px;
+                    font-size: 25px;
                 }
             }
             .steam{
-                height: 100px;
-                width: 100px;
-                font-size: 80px;
+                height: 80px;
+                width: 80px;
+                font-size:60px;
             }
             .steam:hover{
-                height: 150px;
-                width: 100vh;
-                font-size: 100px;
+                height: 80px;
+                width: 50vh;
+                font-size: 50px;
                 .titulo-steam{
-                    padding: 20px;
-                    font-size: 80px;
+                    padding: 20px 20px 20px 10px;
+                    font-size: 25px;
                 }
             }
             .twitch{
-                height: 100px;
-                width: 100px;
-                font-size: 80px;
+                height: 80px;
+                width: 80px;
+                font-size:60px;
             }
             .twitch:hover{
-                height: 150px;
-                width: 100vh;
-                font-size: 100px;
+                height: 80px;
+                width: 50vh;
+                font-size: 50px;
                 .titulo-twitch{
-                    padding: 20px;
-                    font-size: 80px;
+                    padding: 20px 20px 20px 10px;
+                    font-size: 25px;
                 }
             }
         }
@@ -1793,7 +1793,7 @@ $grisclaro:rgb(186, 186, 186);
             width: 100%;
         }
         .formulario{
-            margin: 20px 00px 20px 0px;
+            margin: 0px 10px 0px 10px;
             .datos{
                 .titulo-datos{
                     font-size: 30px;
@@ -2071,12 +2071,13 @@ $grisclaro:rgb(186, 186, 186);
         width: 100%;
         .titulo-contactanos{
             font-size: 40px;
+            padding: 0px;
         }
         .redes-formulario{
             width: 100%;
         }
         .formulario{
-            margin: 20px 00px 20px 0px;
+            margin: 0px 10px 0px 10px;
             .datos{
                 .titulo-datos{
                     font-size: 30px;

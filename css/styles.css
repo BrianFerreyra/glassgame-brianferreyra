@@ -1499,7 +1499,7 @@
     padding: 0px;
   }
   .contacto .redes-formulario {
-    width: 100%;
+    width: 80%;
   }
   .contacto .formulario {
     margin: 20px 0px 20px 0px;
@@ -1514,91 +1514,91 @@
     font-size: 50px;
   }
   .contacto .formulario .datos .input-datos {
-    font-size: 30px;
+    font-size: 20px;
     height: 50px;
-    width: 700px;
+    width: 300px;
   }
   .contacto .formulario .comentarios {
-    padding: 20px;
+    padding: 10px 10px 10px 20px;
   }
   .contacto .formulario .comentarios .textarea {
-    font-size: 30px;
+    font-size: 20px;
     height: 200px;
-    width: 700px;
+    width: 300px;
   }
   .contacto .formulario .botones {
-    padding: 10px;
-    font-size: 20px;
+    padding: 0px;
+    font-size: 15px;
   }
   .contacto .redes .insta {
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
-  }
-  .contacto .redes .insta:hover {
-    height: 150px;
-    width: 100vh;
-    font-size: 100px;
-  }
-  .contacto .redes .insta:hover .titulo-insta {
-    padding: 20px;
-    font-size: 80px;
-  }
-  .contacto .redes .twitter {
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
-  }
-  .contacto .redes .twitter:hover {
-    height: 150px;
-    width: 100vh;
-    font-size: 100px;
-  }
-  .contacto .redes .twitter:hover .titulo-twitter {
-    padding: 20px;
+    height: 80px;
+    width: 80px;
     font-size: 60px;
   }
+  .contacto .redes .insta:hover {
+    height: 80px;
+    width: 50vh;
+    font-size: 50px;
+  }
+  .contacto .redes .insta:hover .titulo-insta {
+    padding: 20px 20px 20px 10px;
+    font-size: 25px;
+  }
+  .contacto .redes .twitter {
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
+  }
+  .contacto .redes .twitter:hover {
+    height: 80px;
+    width: 50vh;
+    font-size: 50px;
+  }
+  .contacto .redes .twitter:hover .titulo-twitter {
+    padding: 20px 20px 20px 10px;
+    font-size: 23px;
+  }
   .contacto .redes .youtube {
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
   }
   .contacto .redes .youtube:hover {
-    height: 150px;
-    width: 100vh;
-    font-size: 100px;
+    height: 80px;
+    width: 50vh;
+    font-size: 50px;
   }
   .contacto .redes .youtube:hover .titulo-youtube {
-    padding: 20px;
-    font-size: 80px;
+    padding: 20px 20px 20px 10px;
+    font-size: 25px;
   }
   .contacto .redes .steam {
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
   }
   .contacto .redes .steam:hover {
-    height: 150px;
-    width: 100vh;
-    font-size: 100px;
+    height: 80px;
+    width: 50vh;
+    font-size: 50px;
   }
   .contacto .redes .steam:hover .titulo-steam {
-    padding: 20px;
-    font-size: 80px;
+    padding: 20px 20px 20px 10px;
+    font-size: 25px;
   }
   .contacto .redes .twitch {
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
   }
   .contacto .redes .twitch:hover {
-    height: 150px;
-    width: 100vh;
-    font-size: 100px;
+    height: 80px;
+    width: 50vh;
+    font-size: 50px;
   }
   .contacto .redes .twitch:hover .titulo-twitch {
-    padding: 20px;
-    font-size: 80px;
+    padding: 20px 20px 20px 10px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 971px) and (max-width: 1400px) {
@@ -1784,7 +1784,7 @@
     width: 100%;
   }
   .contacto .formulario {
-    margin: 20px 0px 20px 0px;
+    margin: 0px 10px 0px 10px;
   }
   .contacto .formulario .datos {
     font-size: 30px;
@@ -2052,12 +2052,13 @@
   }
   .contacto .titulo-contactanos {
     font-size: 40px;
+    padding: 0px;
   }
   .contacto .redes-formulario {
     width: 100%;
   }
   .contacto .formulario {
-    margin: 20px 0px 20px 0px;
+    margin: 0px 10px 0px 10px;
   }
   .contacto .formulario .datos {
     font-size: 30px;
