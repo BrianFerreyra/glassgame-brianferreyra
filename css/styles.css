@@ -1422,7 +1422,179 @@
   }
   .juegos {
     background-color: #131313;
-    height: 80vh;
+    height: 100%;
+    width: 100%;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 40px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    height: 200px;
+    width: 450px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    width: 450px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: top;
+    height: 200px;
+    width: 450px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    width: 450px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+}
+@media only screen and (min-width: 971px) and (max-width: 1400px) {
+  .header {
+    width: 100%;
+  }
+  .header .logo {
+    height: 100px;
+  }
+  .header .titulo-glass-game {
+    font-size: 50px;
+  }
+  .navegador {
+    background-color: #0074C2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+  }
+  .navegador :hover {
+    background-color: #252525;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  .footer .foot .logo-footer {
+    height: 100px;
+  }
+  .footer .foot .redes {
+    font-size: 20px;
+  }
+  .footer .foot .redes .redes-titulo {
+    font-size: 10px;
+  }
+  .footer .foot .redes .redes-titulo h4 {
+    font-size: 10px;
+  }
+  .footer .copyright {
+    font-size: 20px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .main .lanzamiento {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+  }
+  .main .lanzamiento .trailer-boton {
+    height: 50px;
+    width: 50px;
+  }
+  .main .lanzamiento .trailer-boton .fa-youtube {
+    font-size: 100px;
+  }
+  .main .lanzamiento .trailer-boton:focus .zelda-gif {
+    width: 350px;
+    height: 200px;
+  }
+  .main .mainjuegos .multimediajuegos {
+    grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    padding: 50px;
+  }
+  .main .mainjuegos .multimediajuegos .metalgear {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos {
+    background-size: 500px;
+    background-position: 280px;
+    height: 200px;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
+    height: 100px;
+    translate: 20px 70px;
+  }
+  .main #nosotros {
+    width: auto;
+    height: 400px;
+    padding-bottom: 20px;
+    grid-template-rows: 10% 80%;
+  }
+  .main #nosotros h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 0px 1px #0074C2;
+  }
+  .main #nosotros .historia {
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+    background-size: cover;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+  }
+  .juegos {
+    background-color: #131313;
+    height: 100%;
     width: 100%;
   }
   .juegos .contenedor-titulo {
@@ -1489,170 +1661,6 @@
     border-radius: solid 5px;
     border-radius: 10px;
     margin: 10px;
-  }
-}
-@media only screen and (min-width: 971px) and (max-width: 1400px) {
-  .header {
-    width: 100%;
-  }
-  .navegador {
-    background-color: #0074C2;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    margin: 0px;
-  }
-  .navegador :hover {
-    background-color: #252525;
-    color: aliceblue;
-    text-decoration: none;
-  }
-  .nav {
-    font-size: 20px;
-  }
-  .footer .foot .logo-footer {
-    height: 150px;
-  }
-  .footer .foot .redes {
-    font-size: 30px;
-  }
-  .footer .foot .redes .redes-titulo {
-    font-size: 20px;
-  }
-  .footer .foot .redes .redes-titulo h4 {
-    font-size: 20px;
-  }
-  .footer .copyright {
-    font-size: 20px;
-  }
-  .main {
-    width: 100%;
-    height: 100%;
-  }
-  .main .lanzamiento {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    height: 100vh;
-  }
-  .main .lanzamiento .trailer-boton {
-    height: 50px;
-    width: 50px;
-  }
-  .main .lanzamiento .trailer-boton .fa-youtube {
-    font-size: 100px;
-  }
-  .main .lanzamiento .trailer-boton:focus .zelda-gif {
-    width: 700px;
-    height: 500px;
-  }
-  .main .mainjuegos .multimediajuegos {
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    padding: 70px;
-    grid-template-rows: 300px 300px 300px;
-  }
-  .main .mainjuegos .multimediajuegos .metalgear {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    background-image: url(../multimedia/mgs1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .main .mainjuegos .multimediajuegos .contenedor-juegos {
-    background-size: 500px;
-    background-position: center;
-    height: 100%;
-  }
-  .main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
-    height: 100px;
-    translate: 100px 120px;
-  }
-  .main #nosotros {
-    width: auto;
-    height: 300px;
-    padding-bottom: 10px;
-    grid-template-rows: 15% 90%;
-  }
-  .main #nosotros h3 {
-    font-size: 30px;
-    font-weight: 600;
-    text-shadow: 1px 0px 1px #0074C2;
-  }
-  .main #nosotros .historia {
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
-    background-size: cover;
-    height: auto;
-    width: auto;
-    font-size: 15px;
-  }
-  .juegos {
-    background-color: #131313;
-    height: 80vh;
-    width: 100%;
-  }
-  .juegos .contenedor-titulo {
-    text-align: center;
-    padding: 30px;
-  }
-  .juegos .contenedor-titulo .titulo-games {
-    font-size: 70px;
-    justify-self: center;
-    align-self: center;
-    color: #ffffff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    text-shadow: 2px 0px 3px #0093F5;
-  }
-  .juegos .contenedor-juegos {
-    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
-  }
-  .juegos .contenedor-juegos .portadas {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    align-content: stretch;
-    align-items: center;
-  }
-  .juegos .contenedor-juegos .portadas a {
-    transform: skew(-6deg);
-  }
-  .juegos .contenedor-juegos .portadas .link-dst {
-    background-image: url(../multimedia/Dst.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 600px;
-    border-radius: solid 5px;
-    border-radius: 10px;
-  }
-  .juegos .contenedor-juegos .portadas .link-zelda {
-    background-image: url(../multimedia/zbotw.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 600px;
-    border-radius: solid 5px;
-    border-radius: 10px;
-  }
-  .juegos .contenedor-juegos .portadas .link-colossus {
-    background-image: url(../multimedia/sotc.webp);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 600px;
-    border-radius: solid 5px;
-    border-radius: 10px;
-  }
-  .juegos .contenedor-juegos .portadas .link-mgs {
-    background-image: url(../multimedia/mgs1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 600px;
-    border-radius: solid 5px;
-    border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 2560px) {
@@ -1762,7 +1770,7 @@
     padding: 30px;
   }
   .juegos .contenedor-titulo .titulo-games {
-    font-size: 70px;
+    font-size: 50px;
     justify-self: center;
     align-self: center;
     color: #ffffff;
@@ -1787,7 +1795,8 @@
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 300px;
+    width: 600px;
+    margin: 0px 10px;
     border-radius: solid 5px;
     border-radius: 10px;
   }
@@ -1796,7 +1805,8 @@
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 300px;
+    width: 600px;
+    margin: 0px 10px;
     border-radius: solid 5px;
     border-radius: 10px;
   }
@@ -1805,7 +1815,8 @@
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 300px;
+    width: 600px;
+    margin: 0px 10px;
     border-radius: solid 5px;
     border-radius: 10px;
   }
@@ -1814,7 +1825,8 @@
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 300px;
+    width: 600px;
+    margin: 0px 10px;
     border-radius: solid 5px;
     border-radius: 10px;
   }

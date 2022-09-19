@@ -1422,7 +1422,187 @@ $grisclaro:rgb(186, 186, 186);
     }
     .juegos{
         background-color: #131313;
-        height: 80vh;
+        height: 100%;
+        width: 100%;
+        .contenedor-titulo{
+            text-align: center;
+            padding: 30px;
+            .titulo-games{
+                font-size: 40px;
+                justify-self: center;
+                align-self: center;
+                color: #ffffff;
+                font-family: 'Kanit', sans-serif;
+                font-weight: 800;
+                text-shadow:2px 0px 3px #0093F5; 
+            }
+        }
+        .contenedor-juegos{
+            background-image:linear-gradient(to right, #131313 7% ,#0074C2 20%);
+            .portadas{
+                display: flex;
+                justify-content: space-around;
+                padding: 50px 10px;
+                align-content: stretch;
+                align-items: center;   
+                a{
+                    transform: skew(-6deg);
+                }
+                .link-dst{
+                    background-image: url(../multimedia/Dst.jpg);
+                    background-size: cover;
+                    background-position: 0px 0px;
+                    height: 200px;
+                    width: 450px;
+                    border-radius: 10px;
+                    margin: 0px 10px;
+                }
+                .link-zelda{
+                    background-image: url(../multimedia/zbotw.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    height: 200px;
+                    width: 450px;
+                    border-radius: solid 5px;
+                    border-radius: 10px;
+                    margin: 0px 10px;
+                }
+                .link-colossus{
+                    background-image: url(../multimedia/sotc.webp);
+                    background-size: cover;
+                    background-position: top;
+                    height: 200px;
+                    width: 450px;
+                    border-radius: solid 5px;
+                    border-radius: 10px;
+                    margin: 0px 10px;
+                }
+                .link-mgs{
+                    background-image: url(../multimedia/mgs1.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    height: 200px;
+                    width: 450px;
+                    border-radius: solid 5px;
+                    border-radius: 10px;
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:971px) and (max-width:1400px) {
+    .header{
+        width: 100%;
+        .logo{
+            height: 100px;
+        }
+        .titulo-glass-game{
+            font-size: 50px;
+        }
+    }
+    .navegador{
+        background-color: #0074C2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: 0px;
+        :hover{
+            background-color: $backgroundcolor;
+            color: $blanco;
+            text-decoration: none;
+        }    
+    }
+    .nav{
+        font-size: 20px;
+    }
+    .footer{
+        .foot{
+            .logo-footer{
+                height: 100px;
+            }
+            .redes{
+                font-size: 20px;
+                .redes-titulo{
+                    font-size: 10px;
+                    h4{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .copyright{
+            font-size: 20px;
+        }
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        .lanzamiento{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            .trailer-boton{
+                height: 50px;
+                width: 50px;
+                .fa-youtube{
+                    font-size: 100px;
+                }
+            }
+            .trailer-boton:focus{
+                .zelda-gif{
+                    width: 350px;
+                    height: 200px;
+                }
+            }
+        }
+        .mainjuegos{   
+            .multimediajuegos{
+                grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+                grid-template-rows: 200px 200px 200px;
+                padding: 50px;
+                .metalgear{
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    background-image: url(../multimedia/mgs1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contenedor-juegos{
+                    background-size: 500px;
+                    background-position: 280px;
+                    height: 200px;
+                    .logo-juegos{
+                        height: 100px;
+                        translate: 20px 70px;
+                    }
+                }
+            }
+        }
+        #nosotros{
+            width: auto;
+            height: 400px;
+            padding-bottom: 20px;
+            grid-template-rows: 10% 80%;
+            h3{
+                font-size: 30px;
+                font-weight:600;
+                text-shadow: 1px 0px 1px $celestemedio;
+            }
+            .historia{
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+                background-size: cover; 
+                height: auto;
+                width: auto;
+                font-size: 15px;
+            }
+        }
+    }
+    .juegos{
+        background-color: #131313;
+        height: 100%;
         width: 100%;
         .contenedor-titulo{
             text-align: center;
@@ -1486,178 +1666,6 @@ $grisclaro:rgb(186, 186, 186);
                     border-radius: solid 5px;
                     border-radius: 10px;
                     margin: 10px;
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width:971px) and (max-width:1400px) {
-    .header{
-        width: 100%;
-    }
-    .navegador{
-        background-color: #0074C2;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        list-style: none;
-        margin: 0px;
-        :hover{
-            background-color: $backgroundcolor;
-            color: $blanco;
-            text-decoration: none;
-        }    
-    }
-    .nav{
-        font-size: 20px;
-    }
-    .footer{
-        .foot{
-            .logo-footer{
-                height: 150px;
-            }
-            .redes{
-                font-size: 30px;
-                .redes-titulo{
-                    font-size: 20px;
-                    h4{
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-        .copyright{
-            font-size: 20px;
-        }
-    }
-    .main{
-        width: 100%;
-        height: 100%;
-        .lanzamiento{
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding: 0;
-            height: 100vh;
-            .trailer-boton{
-                height: 50px;
-                width: 50px;
-                .fa-youtube{
-                    font-size: 100px;
-                }
-            }
-            .trailer-boton:focus{
-                .zelda-gif{
-                    width: 700px;
-                    height: 500px;
-                }
-            }
-        }
-        .mainjuegos{   
-            .multimediajuegos{
-                grid-template-columns: 20% 20% 20% 20% 20%;
-                padding: 70px;
-                grid-template-rows: 300px 300px 300px;
-                .metalgear{
-                    grid-column: 3/4;
-                    grid-row: 1/2;
-                    background-image: url(../multimedia/mgs1.jpg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                .contenedor-juegos{
-                    background-size: 500px;
-                    background-position: center;
-                    height: 100%;
-                    .logo-juegos{
-                        height: 100px;
-                        translate: 100px 120px;
-                    }
-                }
-            }
-        }
-        #nosotros{
-            width: auto;
-            height: 300px;
-            padding-bottom: 10px;
-            grid-template-rows: 15% 90%;
-            h3{
-                font-size: 30px;
-                font-weight:600;
-                text-shadow: 1px 0px 1px $celestemedio;
-            }
-            .historia{
-                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
-                background-size: cover; 
-                height: auto;
-                width: auto;
-                font-size: 15px;
-            }
-        }
-    }
-    .juegos{
-        background-color: #131313;
-        height: 80vh;
-        width: 100%;
-        .contenedor-titulo{
-            text-align: center;
-            padding: 30px;
-            .titulo-games{
-                font-size: 70px;
-                justify-self: center;
-                align-self: center;
-                color: #ffffff;
-                font-family: 'Kanit', sans-serif;
-                font-weight: 800;
-                text-shadow:2px 0px 3px #0093F5; 
-            }
-        }
-        .contenedor-juegos{
-            background-image:linear-gradient(to right, #131313 7% ,#0074C2 20%);
-            .portadas{
-                display: flex;
-                justify-content: space-around;
-                padding: 50px;
-                align-content: stretch;
-                align-items: center;   
-                a{
-                    transform: skew(-6deg);
-                }
-                .link-dst{
-                    background-image: url(../multimedia/Dst.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    height: 700px;
-                    width: 600px;
-                    border-radius: solid 5px;
-                    border-radius: 10px;
-                }
-                .link-zelda{
-                    background-image: url(../multimedia/zbotw.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    height: 700px;
-                    width: 600px;
-                    border-radius: solid 5px;
-                    border-radius: 10px;
-                }
-                .link-colossus{
-                    background-image: url(../multimedia/sotc.webp);
-                    background-size: cover;
-                    background-position: center;
-                    height: 700px;
-                    width: 600px;
-                    border-radius: solid 5px;
-                    border-radius: 10px;
-                }
-                .link-mgs{
-                    background-image: url(../multimedia/mgs1.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    height: 700px;
-                    width: 600px;
-                    border-radius: solid 5px;
-                    border-radius: 10px;
                 }
             }
         }
@@ -1776,7 +1784,7 @@ $grisclaro:rgb(186, 186, 186);
             text-align: center;
             padding: 30px;
             .titulo-games{
-                font-size: 70px;
+                font-size: 50px;
                 justify-self: center;
                 align-self: center;
                 color: #ffffff;
@@ -1800,7 +1808,8 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 300px;
+                    width: 600px;
+                    margin: 0px 10px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1809,7 +1818,8 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 300px;
+                    width: 600px;
+                    margin: 0px 10px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1818,7 +1828,8 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 300px;
+                    width: 600px;
+                    margin: 0px 10px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1827,7 +1838,8 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 300px;
+                    width: 600px;
+                    margin: 0px 10px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
