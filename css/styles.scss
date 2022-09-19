@@ -1490,6 +1490,118 @@ $grisclaro:rgb(186, 186, 186);
             }
         }
     }
+    .contacto{
+        height: 100vh;
+        width: 100%;
+        .titulo-contactanos{
+            font-size: 40px;
+            padding: 0px;
+        }
+        .redes-formulario{
+            width: 100%;
+        }
+        .formulario{
+            margin: 20px 00px 20px 0px;
+            .datos{
+                .titulo-datos{
+                    font-size: 30px;
+                }
+                font-size: 30px;
+                .label-datos{
+                    font-size: 50px;
+                }
+                .input-datos{
+                    font-size: 30px;
+                    height: 50px;
+                    width: 700px;
+                }
+            }
+            .comentarios{
+                padding: 20px;
+                .textarea{
+                    font-size: 30px;
+                    height: 200px;
+                    width: 700px;
+                }
+            }
+            .botones{
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+        .redes{
+            .insta{
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            .insta:hover{
+                height: 150px;
+                width: 100vh;
+                font-size: 100px;
+                .titulo-insta{
+                    padding: 20px;
+                    font-size: 80px;
+                }
+            }
+            .twitter{
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            .twitter:hover{
+                height: 150px;
+                width: 100vh;
+                font-size: 100px;
+                .titulo-twitter{
+                    padding: 20px;
+                    font-size: 60px;
+                }
+            }
+            .youtube{
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            .youtube:hover{
+                height: 150px;
+                width: 100vh;
+                font-size: 100px;
+                .titulo-youtube{
+                    padding: 20px;
+                    font-size: 80px;
+                }
+            }
+            .steam{
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            .steam:hover{
+                height: 150px;
+                width: 100vh;
+                font-size: 100px;
+                .titulo-steam{
+                    padding: 20px;
+                    font-size: 80px;
+                }
+            }
+            .twitch{
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            .twitch:hover{
+                height: 150px;
+                width: 100vh;
+                font-size: 100px;
+                .titulo-twitch{
+                    padding: 20px;
+                    font-size: 80px;
+                }
+            }
+        }
+    }
 }
 @media only screen and (min-width:971px) and (max-width:1400px) {
     .header{
@@ -1675,6 +1787,7 @@ $grisclaro:rgb(186, 186, 186);
         width: 100%;
         .titulo-contactanos{
             font-size: 40px;
+            padding: 0px;
         }
         .redes-formulario{
             width: 100%;
