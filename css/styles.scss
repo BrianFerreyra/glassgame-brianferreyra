@@ -1422,13 +1422,13 @@ $grisclaro:rgb(186, 186, 186);
     }
     .juegos{
         background-color: #131313;
-        height: 100%;
+        height: 80vh;
         width: 100%;
         .contenedor-titulo{
             text-align: center;
             padding: 30px;
             .titulo-games{
-                font-size: 40px;
+                font-size: 50px;
                 justify-self: center;
                 align-self: center;
                 color: #ffffff;
@@ -1442,7 +1442,7 @@ $grisclaro:rgb(186, 186, 186);
             .portadas{
                 display: flex;
                 justify-content: space-around;
-                padding: 50px 10px;
+                padding: 50px;
                 align-content: stretch;
                 align-items: center;   
                 a{
@@ -1453,39 +1453,39 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: 0px 0px;
                     height: 200px;
-                    width: 450px;
+                    width: 350px;
                     border-radius: 10px;
-                    margin: 0px 10px;
+                    margin: 10px;
                 }
                 .link-zelda{
                     background-image: url(../multimedia/zbotw.jpg);
                     background-size: cover;
                     background-position: bottom;
                     height: 200px;
-                    width: 450px;
+                    width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 0px 10px;
+                    margin: 10px;
                 }
                 .link-colossus{
                     background-image: url(../multimedia/sotc.webp);
                     background-size: cover;
                     background-position: top;
                     height: 200px;
-                    width: 450px;
+                    width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 0px 10px;
+                    margin: 10px;
                 }
                 .link-mgs{
                     background-image: url(../multimedia/mgs1.jpg);
                     background-size: cover;
                     background-position: bottom;
                     height: 200px;
-                    width: 450px;
+                    width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 0px 10px;
+                    margin: 10px;
                 }
             }
         }
@@ -1602,13 +1602,13 @@ $grisclaro:rgb(186, 186, 186);
     }
     .juegos{
         background-color: #131313;
-        height: 100%;
+        height: 80vh;
         width: 100%;
         .contenedor-titulo{
             text-align: center;
             padding: 30px;
             .titulo-games{
-                font-size: 70px;
+                font-size: 40px;
                 justify-self: center;
                 align-self: center;
                 color: #ffffff;
@@ -1632,40 +1632,40 @@ $grisclaro:rgb(186, 186, 186);
                     background-image: url(../multimedia/Dst.jpg);
                     background-size: cover;
                     background-position: 0px 0px;
-                    height: 200px;
-                    width: 350px;
+                    height: 500px;
+                    width: 300px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 0px 10px;
                 }
                 .link-zelda{
                     background-image: url(../multimedia/zbotw.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 200px;
-                    width: 350px;
+                    height: 500px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 0px 10px;
                 }
                 .link-colossus{
                     background-image: url(../multimedia/sotc.webp);
                     background-size: cover;
                     background-position: top;
-                    height: 200px;
-                    width: 350px;
+                    height: 500px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 0px 10px;
                 }
                 .link-mgs{
                     background-image: url(../multimedia/mgs1.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 200px;
-                    width: 350px;
+                    height: 500px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 0px 10px;
                 }
             }
         }
@@ -1784,7 +1784,7 @@ $grisclaro:rgb(186, 186, 186);
             text-align: center;
             padding: 30px;
             .titulo-games{
-                font-size: 50px;
+                font-size: 70px;
                 justify-self: center;
                 align-self: center;
                 color: #ffffff;
@@ -1808,8 +1808,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 600px;
-                    margin: 0px 10px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1818,8 +1817,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 600px;
-                    margin: 0px 10px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1828,8 +1826,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 600px;
-                    margin: 0px 10px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
@@ -1838,8 +1835,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-size: cover;
                     background-position: center;
                     height: 500px;
-                    width: 600px;
-                    margin: 0px 10px;
+                    width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
                 }
