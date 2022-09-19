@@ -2401,7 +2401,7 @@
   background-size: cover;
   background-position: 0px 0px;
   height: 500px;
-  width: 300px;
+  width: 200px;
   border-radius: 10px;
   margin: 0px 10px;
 }
@@ -2410,7 +2410,7 @@
   background-size: cover;
   background-position: bottom;
   height: 500px;
-  width: 300px;
+  width: 200px;
   border-radius: solid 5px;
   border-radius: 10px;
   margin: 0px 10px;
@@ -2420,7 +2420,7 @@
   background-size: cover;
   background-position: top;
   height: 500px;
-  width: 300px;
+  width: 200px;
   border-radius: solid 5px;
   border-radius: 10px;
   margin: 0px 10px;
@@ -2430,7 +2430,7 @@
   background-size: cover;
   background-position: bottom;
   height: 500px;
-  width: 300px;
+  width: 200px;
   border-radius: solid 5px;
   border-radius: 10px;
   margin: 0px 10px;
