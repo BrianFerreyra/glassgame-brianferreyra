@@ -1600,6 +1600,24 @@
     padding: 20px 20px 20px 10px;
     font-size: 25px;
   }
+  .merchandise .zelda {
+    padding: 10px;
+  }
+  .merchandise .zelda .card {
+    margin: 3px;
+  }
+  .merchandise .dst {
+    padding: 10px;
+  }
+  .merchandise .dst .card {
+    margin: 3px;
+  }
+  .merchandise .colossus {
+    padding: 10px;
+  }
+  .merchandise .colossus .card {
+    margin: 3px;
+  }
   .merchandise .titulotienda {
     font-size: 30px;
     padding: 10px;
@@ -1616,64 +1634,27 @@
     padding-right: 20px;
   }
   .merchandise .filtro-selector, .merchandise .filtro-label, .merchandise .titulo-filtro {
-    font-size: 18px;
-    height: 15px;
-    width: 15px;
+    font-size: 17px;
+    height: 10px;
+    width: 10px;
     margin-top: 10px;
-  }
-  .merchandise .zelda .card {
-    min-width: 2rem;
-    margin: 3px;
-    width: 18rem;
-  }
-  .merchandise .zelda .card .card-img-top {
-    height: 200px;
-    width: 168px;
-  }
-  .merchandise .zelda .card .card-title {
-    font-size: 20px;
-  }
-  .merchandise .zelda .card .list-group-item {
-    font-size: 20px;
-  }
-  .merchandise .zelda .card .list-group-item .fa-regular {
-    font-size: 25px;
-    padding: 0px 10px 0px 10px;
-  }
-  .merchandise .zelda .card .list-group-item .fa-brands {
-    font-size: 25px;
-    padding: 0px 10px 0px 10px;
-  }
-  .merchandise .zelda .card .list-group-item .btn-lg {
-    font-size: 1.5rem;
-  }
-  .merchandise .dont-starve {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 40px;
-  }
-  .merchandise .colossus {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 40px;
   }
   .merchandise .card {
     color: #131313;
     text-shadow: 1px 0px 2px #0074C2;
-    min-width: 45rem;
+    min-width: 12rem;
     background-color: rgba(247, 92, 25, 0.7098039216);
     border: 1px solid rgb(186, 186, 186);
   }
   .merchandise .card .card-img-top {
-    height: 780px;
+    height: 100px;
+    width: 190px;
   }
   .merchandise .card .card-title {
     font-family: "Kanit", sans-serif;
     font-style: bold;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
   }
   .merchandise .card .card-body {
@@ -1687,6 +1668,7 @@
     font-size: 20px;
     justify-self: center;
     text-align: center;
+    padding: 5px 0px 0px 0px;
   }
   .merchandise .card .list-group-flush .list-group-item .favoritos {
     font-size: 40px;
@@ -1700,6 +1682,7 @@
     color: red;
     cursor: pointer;
     text-align: right;
+    font-size: 25px;
   }
   .merchandise .card .list-group-flush .list-group-item .favoritos .fa-solid {
     display: none;
@@ -1714,13 +1697,14 @@
     color: red;
     display: block;
     text-align: right;
+    font-size: 25px;
   }
   .merchandise .card .btn-group-lg > .btn, .merchandise .card .btn-lg {
     background-color: #dbdbdb;
     border: rgb(186, 186, 186);
     color: #0074C2;
     padding: 0.5rem 1rem;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     border-radius: 0.3rem;
     width: -webkit-fill-available;

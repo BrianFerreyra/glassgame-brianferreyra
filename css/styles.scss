@@ -1603,6 +1603,24 @@ $grisclaro:rgb(186, 186, 186);
         }
     }
     .merchandise{
+        .zelda{
+            padding: 10px;
+            .card{
+                margin: 3px;
+            }
+        }
+        .dst{
+            padding: 10px;
+            .card{
+                margin: 3px;
+            }
+        }
+        .colossus{
+            padding: 10px;
+            .card{
+                margin: 3px;
+            }
+        }
         .titulotienda{
             font-size: 30px;
             padding: 10px;
@@ -1619,119 +1637,83 @@ $grisclaro:rgb(186, 186, 186);
             padding-right: 20px;
         }
         .filtro-selector, .filtro-label, .titulo-filtro{
-            font-size: 18px;
-            height: 15px;
-            width: 15px;
+            font-size: 17px;
+            height: 10px;
+            width: 10px;
             margin-top: 10px;
         }
-            .zelda {
-                .card{
-                    min-width: 2rem;
-                    margin: 3px;
-                    width: 18rem;
-                    .card-img-top{
-                        height: 200px;
-                        width: 168px;
+        .card{
+            color: #131313;
+            text-shadow: 1px 0px 2px #0074C2;
+            min-width: 12rem;
+            background-color: #f75c19b5;
+            border: 1px solid rgb(186, 186, 186);
+            .card-img-top {
+                height: 100px;
+                width: 190px;
+            }
+            .card-title{
+                font-family:'Kanit', sans-serif;
+                font-style: bold;
+                font-weight:400;
+                font-size: 20px;
+                text-align: center;
+            }
+            .card-body{
+                flex: none;
+            }
+            .list-group-flush .list-group-item {
+                border: none;
+                color: #131313;
+                font-family: 'Noto Serif Georgian', serif;
+                font-weight:800;
+                font-size: 20px;
+                justify-self: center;
+                text-align: center;
+                padding: 5px 0px 0px 0px;
+                .favoritos{
+                    font-size: 40px;
+                    border: transparent;
+                    background-color: transparent;
+                    background-size: 100px;
+                    display: flex;
+                    text-align: right;
+                    
+                    .fa-regular{
+                        color: red;
+                        cursor: pointer;
+                        text-align: right;
+                        font-size: 25px;
                     }
-                    .card-title{
-                        font-size: 20px;
+                    .fa-solid{
+                        display: none;
                     }
-                    .list-group-item{
-                        font-size: 20px;
-                        .fa-regular{
-                            font-size: 25px;
-                            padding: 0px 10px 0px 10px;
-                        }    
-                        .fa-brands{
-                            font-size: 25px;
-                            padding: 0px 10px 0px 10px; 
-                        }
-                        .btn-lg{
-                            font-size: 1.5rem;
-                        }
+                }
+                .favoritos:focus{
+                    display: flex;
+                    .fa-regular{
+                        display:none;
+                    }
+                    .fa-solid{
+                        color:red;
+                        display: block;
+                        text-align:right;
+                        font-size: 25px;
                     }
                 }
             }
-            .dont-starve{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 40px;
+            .btn-group-lg>.btn, .btn-lg {
+                background-color: #dbdbdb;
+                border: rgb(186, 186, 186);
+                color: #0074C2;
+                padding: 0.5rem 1rem;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                border-radius: 0.3rem;
+                width: -webkit-fill-available;
             }
-            .colossus{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 40px;
-            }
-                .card{
-                    color: #131313;
-                    text-shadow: 1px 0px 2px #0074C2;
-                    min-width: 45rem;
-                    background-color: #f75c19b5;
-                    border: 1px solid rgb(186, 186, 186);
-                        .card-img-top {
-                            height: 780px;
-                        }
-                        .card-title{
-                            font-family:'Kanit', sans-serif;
-                            font-style: bold;
-                            font-weight:400;
-                            font-size: 40px;
-                            text-align: center;
-                        }
-                        .card-body{
-                            flex: none;
-                        }
-                        .list-group-flush .list-group-item {
-                            border: none;
-                            color: #131313;
-                            font-family: 'Noto Serif Georgian', serif;
-                            font-weight:800;
-                            font-size: 20px;
-                            justify-self: center;
-                            text-align: center;
-                            .favoritos{
-                                font-size: 40px;
-                                border: transparent;
-                                background-color: transparent;
-                                background-size: 100px;
-                                display: flex;
-                                text-align: right;
-                                
-                                .fa-regular{
-                                    color: red;
-                                    cursor: pointer;
-                                    text-align: right;
-                                }
-                                .fa-solid{
-                                    display: none;
-                                }
-                            }
-                            .favoritos:focus{
-                                display: flex;
-                                .fa-regular{
-                                    display:none;
-                                }
-                                .fa-solid{
-                                    color:red;
-                                    display: block;
-                                    text-align:right;
-                                }
-                            }
-                        }
-                        .btn-group-lg>.btn, .btn-lg {
-                            background-color: #dbdbdb;
-                            border: rgb(186, 186, 186);
-                            color: #0074C2;
-                            padding: 0.5rem 1rem;
-                            font-size: 2.5rem;
-                            line-height: 1.5;
-                            border-radius: 0.3rem;
-                            width: -webkit-fill-available;
-                        }
-                }
         }
+    }
         .merch{
             padding: 30px;
             .new-arrivals{
