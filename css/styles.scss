@@ -694,7 +694,7 @@ $grisclaro:rgb(186, 186, 186);
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding: 100px;
+        padding: 0px;
         .metalgear-boss{
             background-image: url(../multimedia/mg31.jpg);
             background-size: cover;
@@ -2082,33 +2082,34 @@ $grisclaro:rgb(186, 186, 186);
         }
         .metalgear-page{
             .metalgear-grid{
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3 , 1fr);
+                grid-template-rows: 1fr 1fr 1fr 1fr;
                 padding: 0px;
                 .metalgear-boss{
-                    grid-row: 1/3;
-                    grid-column: 2/4;
+                    grid-row: 4/5;
+                    grid-column: 1/4;
                 }
                 .metalgear-gif{
                     background-size: 750px 880px;
-                    grid-row: 2/3;
-                    grid-column: 3/5;
+                    grid-row: 2/4;
+                    grid-column: 2/4;
                 }
                 .metalgear-img{
-                    grid-row: 1/2;
-                    grid-column: 1/3;
+                    grid-row: 2/3;
+                    grid-column: 2/3;
                     background-position: 0px;
                 }
                 .metalgear-img2{
                     grid-row: 3/4;
-                    grid-column: 1/5;
+                    grid-column: 1/2;
                 }
                 .item5{
-
+                    grid-row: 1/2;
+                    grid-column: 1/3;
                 }
                 .metalgear-texto{
-                    grid-row: 1/2;
-                    grid-column: 3/5;
+                    grid-row: 2/3;
+                    grid-column: 1/2;
                     font-size: 30px;
                     padding: 40px;
                     .metalgear-titulo{
@@ -2126,13 +2127,13 @@ $grisclaro:rgb(186, 186, 186);
                     }
                 }
                 .metalgear-img3{
-                    grid-row: 4/5;
-                    grid-column: 1/4;
+                    grid-row: 2/2;
+                    grid-column: 2/3;
                 }
             }
             .novedades{
-                grid-row: 4/5;
-                grid-column: 4/5;
+                grid-row: 1/2;
+                grid-column: 3/4;
                 font-size: 30px;
                 padding: 10px;
                 .titulo-novedades{
@@ -2156,8 +2157,8 @@ $grisclaro:rgb(186, 186, 186);
                     }
                 }
             .requerimientos{
-                grid-column: 1/3;
-                grid-row: 2/3;
+                grid-column: 1/2;
+                grid-row: 4/5;
                 background-color: aliceblue;
                 width: 100%;
                 display: flex;
@@ -2471,6 +2472,110 @@ $grisclaro:rgb(186, 186, 186);
                 .titulo-twitch{
                     padding: 20px;
                     font-size: 80px;
+                }
+            }
+        }
+    }
+    .metalgear-page{
+        .metalgear-grid{
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding: 0px;
+            .metalgear-boss{
+                grid-row: 4/5;
+                grid-column: 1/4;
+            }
+            .metalgear-gif{
+                background-size: 750px 880px;
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+            .metalgear-img{
+                grid-row: 2/3;
+                grid-column: 2/3;
+                background-position: 0px;
+            }
+            .metalgear-img2{
+                grid-row: 3/4;
+                grid-column: 1/2;
+            }
+            .item5{
+                grid-row: 1/2;
+                grid-column: 1/3;
+            }
+            .metalgear-texto{
+                grid-row: 2/3;
+                grid-column: 1/2;
+                font-size: 30px;
+                padding: 40px;
+                .metalgear-titulo{
+                    font-size: 21px;
+                    font-weight: 600;
+                }
+                p{
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    font-size: 8px;
+                }
+                .metalgear-genre{
+                    font-size: 10px;
+                    padding: 10px 0px 10px 0px;
+                }
+            }
+            .metalgear-img3{
+                grid-row: 2/2;
+                grid-column: 2/3;
+            }
+        }
+        .novedades{
+            grid-row: 1/2;
+            grid-column: 3/4;
+            font-size: 30px;
+            padding: 10px;
+            .titulo-novedades{
+                font-size: 20px;
+            }
+            .metalgear-parche{
+                font-size: 10px;
+                padding: 0px;
+            }
+            ul {
+                padding: 0px 0px 0px 20px;
+                font-size: 10px;
+                }
+                li{
+                    font-size: 10px;
+                }
+                p{
+                    padding: 0px 0px 0px 10px;
+                    margin-bottom: 1rem;
+                    font-size: 8px;
+                }
+            }
+        .requerimientos{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            background-color: aliceblue;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            padding: 20px;
+            .titulo-requerimientos{
+                color: #235475;
+                font-size: 10px;
+                padding: 0px;
+                text-shadow: 1px 1px 4px #0093F5;
+            }
+            table{
+                text-align: center;
+                th{
+                    font-size: 10px;
+                    padding: 10px;
+                }
+                td{
+                    font-size: 10px;
                 }
             }
         }

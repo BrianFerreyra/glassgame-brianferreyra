@@ -697,7 +697,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 100px;
+  padding: 0px;
 }
 .metalgear-page .metalgear-grid .metalgear-boss {
   background-image: url(../multimedia/mg31.jpg);
@@ -2073,31 +2073,35 @@
   font-size: 10px;
 }
 .zelda-page .metalgear-page .metalgear-grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 0px;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-boss {
-  grid-row: 1/3;
-  grid-column: 2/4;
+  grid-row: 4/5;
+  grid-column: 1/4;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-gif {
   background-size: 750px 880px;
-  grid-row: 2/3;
-  grid-column: 3/5;
+  grid-row: 2/4;
+  grid-column: 2/4;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-img {
-  grid-row: 1/2;
-  grid-column: 1/3;
+  grid-row: 2/3;
+  grid-column: 2/3;
   background-position: 0px;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-img2 {
   grid-row: 3/4;
-  grid-column: 1/5;
+  grid-column: 1/2;
+}
+.zelda-page .metalgear-page .metalgear-grid .item5 {
+  grid-row: 1/2;
+  grid-column: 1/3;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-texto {
-  grid-row: 1/2;
-  grid-column: 3/5;
+  grid-row: 2/3;
+  grid-column: 1/2;
   font-size: 30px;
   padding: 40px;
 }
@@ -2115,12 +2119,12 @@
   padding: 10px 0px 10px 0px;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-img3 {
-  grid-row: 4/5;
-  grid-column: 1/4;
+  grid-row: 2/2;
+  grid-column: 2/3;
 }
 .zelda-page .metalgear-page .novedades {
-  grid-row: 4/5;
-  grid-column: 4/5;
+  grid-row: 1/2;
+  grid-column: 3/4;
   font-size: 30px;
   padding: 10px;
 }
@@ -2144,8 +2148,8 @@
   font-size: 8px;
 }
 .zelda-page .metalgear-page .requerimientos {
-  grid-column: 1/3;
-  grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 4/5;
   background-color: aliceblue;
   width: 100%;
   display: flex;
@@ -2451,6 +2455,108 @@
   .contacto .redes .twitch:hover .titulo-twitch {
     padding: 20px;
     font-size: 80px;
+  }
+  .metalgear-page .metalgear-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-boss {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-gif {
+    background-size: 750px 880px;
+    grid-row: 2/4;
+    grid-column: 2/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-position: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .metalgear-page .metalgear-grid .item5 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 30px;
+    padding: 40px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-titulo {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 8px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-genre {
+    font-size: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img3 {
+    grid-row: 2/2;
+    grid-column: 2/3;
+  }
+  .metalgear-page .novedades {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .metalgear-page .novedades .titulo-novedades {
+    font-size: 20px;
+  }
+  .metalgear-page .novedades .metalgear-parche {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .metalgear-page .novedades ul {
+    padding: 0px 0px 0px 20px;
+    font-size: 10px;
+  }
+  .metalgear-page .novedades li {
+    font-size: 10px;
+  }
+  .metalgear-page .novedades p {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 1rem;
+    font-size: 8px;
+  }
+  .metalgear-page .requerimientos {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .metalgear-page .requerimientos .titulo-requerimientos {
+    color: #235475;
+    font-size: 10px;
+    padding: 0px;
+    text-shadow: 1px 1px 4px #0093F5;
+  }
+  .metalgear-page .requerimientos table {
+    text-align: center;
+  }
+  .metalgear-page .requerimientos table th {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .metalgear-page .requerimientos table td {
+    font-size: 10px;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 2560px) {
