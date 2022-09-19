@@ -1772,6 +1772,15 @@ $grisclaro:rgb(186, 186, 186);
             }  
         }
     }
+    #zelda:checked ~	#cards  .dont-starve, #zelda:checked ~	#cards .colossus{
+        display: none;
+    }
+    #dont-starve:checked ~	#cards .zelda, #dont-starve:checked ~	#cards .colossus{
+        display: none;
+    }
+    #colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve{
+        display: none;
+    }
 @media only screen and (min-width:971px) and (max-width:1400px) {
     .header{
         width: 100%;
