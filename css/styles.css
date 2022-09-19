@@ -1669,8 +1669,11 @@
   .contacto .titulo-contactanos {
     font-size: 40px;
   }
+  .contacto .redes-formulario {
+    width: 100%;
+  }
   .contacto .formulario {
-    margin: 20px 90px 20px 0px;
+    margin: 20px 0px 20px 0px;
   }
   .contacto .formulario .datos {
     font-size: 30px;
@@ -1719,12 +1722,12 @@
   }
   .contacto .redes .twitter:hover {
     height: 150px;
-    width: 120vh;
+    width: 100vh;
     font-size: 100px;
   }
   .contacto .redes .twitter:hover .titulo-twitter {
     padding: 20px;
-    font-size: 65px;
+    font-size: 60px;
   }
   .contacto .redes .youtube {
     height: 100px;
@@ -1939,8 +1942,11 @@
   .contacto .titulo-contactanos {
     font-size: 40px;
   }
+  .contacto .redes-formulario {
+    width: 100%;
+  }
   .contacto .formulario {
-    margin: 20px 90px 20px 0px;
+    margin: 20px 0px 20px 0px;
   }
   .contacto .formulario .datos {
     font-size: 30px;
@@ -1989,12 +1995,12 @@
   }
   .contacto .redes .twitter:hover {
     height: 150px;
-    width: 120vh;
+    width: 100vh;
     font-size: 100px;
   }
   .contacto .redes .twitter:hover .titulo-twitter {
     padding: 20px;
-    font-size: 65px;
+    font-size: 60px;
   }
   .contacto .redes .youtube {
     height: 100px;
