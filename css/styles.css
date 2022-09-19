@@ -3318,9 +3318,28 @@
 }
 .colossus-page .merchandise #cards .zelda {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding: 40px;
+  padding: 40px 0px 40px 0px;
+}
+.colossus-page .merchandise #cards .zelda .card {
+  min-width: 25rem;
+  height: 500px;
+  width: 398.5px;
+}
+.colossus-page .merchandise #cards .zelda .card .card-title {
+  font-size: 30px;
+}
+.colossus-page .merchandise #cards .zelda .card .btn-lg {
+  font-size: 1.5rem;
+}
+.colossus-page .merchandise #cards .zelda .card .fa-regular {
+  font-size: 30px;
+  padding: 5px;
+}
+.colossus-page .merchandise #cards .zelda .card .fa-brands {
+  font-size: 30px;
+  padding: 5px;
 }
 .colossus-page .merchandise #cards .dont-starve {
   display: flex;
