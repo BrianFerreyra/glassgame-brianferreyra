@@ -1975,8 +1975,8 @@
   font-size: 10px;
 }
 .zelda-page .colossus-page .colossus-grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 0px;
 }
 .zelda-page .colossus-page .colossus-grid .colossus-boss {
@@ -2073,8 +2073,8 @@
   font-size: 10px;
 }
 .zelda-page .metalgear-page .metalgear-grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 0px;
 }
 .zelda-page .metalgear-page .metalgear-grid .metalgear-boss {
