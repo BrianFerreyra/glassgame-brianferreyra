@@ -1422,11 +1422,11 @@ $grisclaro:rgb(186, 186, 186);
     }
     .juegos{
         background-color: #131313;
-        height: 80vh;
+        height: 100%;
         width: 100%;
         .contenedor-titulo{
             text-align: center;
-            padding: 30px;
+            padding: 10px;
             .titulo-games{
                 font-size: 50px;
                 justify-self: center;
@@ -1441,269 +1441,168 @@ $grisclaro:rgb(186, 186, 186);
             background-image:linear-gradient(to right, #131313 7% ,#0074C2 20%);
             .portadas{
                 display: flex;
+                flex-direction: column;
                 justify-content: space-around;
-                padding: 50px;
                 align-content: stretch;
                 align-items: center;   
+                padding: 10px 0px 10px 10px;
                 a{
                     transform: skew(-6deg);
                 }
                 .link-dst{
                     background-image: url(../multimedia/Dst.jpg);
                     background-size: cover;
-                    background-position: center;
-                    height: 200px;
+                    background-position: top;
+                    height: 150px;
                     width: 350px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 5px 0px 5px 0px;
                 }
                 .link-zelda{
                     background-image: url(../multimedia/zbotw.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 200px;
+                    height: 150px;
                     width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 5px 0px 5px 0px;
                 }
                 .link-colossus{
                     background-image: url(../multimedia/sotc.webp);
                     background-size: cover;
-                    background-position: top;
-                    height: 200px;
+                    background-position: center;
+                    height: 150px;
                     width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 5px 0px 5px 0px;
                 }
                 .link-mgs{
                     background-image: url(../multimedia/mgs1.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 200px;
+                    height: 150px;
                     width: 350px;
                     border-radius: solid 5px;
                     border-radius: 10px;
-                    margin: 10px;
+                    margin: 5px 0px 5px 0px;
                 }
             }
         }
     }
     .contacto{
-        height: 100vh;
-        width: 100%;
-        .titulo-contactanos{
-            font-size: 40px;
-            padding: 0px;
-        }
-        .redes-formulario{
-            width: 80%;
-        }
-        .formulario{
-            margin: 20px 00px 20px 0px;
-            .datos{
-                .titulo-datos{
-                    font-size: 30px;
-                }
-                font-size: 30px;
-                .label-datos{
-                    font-size: 50px;
-                }
-                .input-datos{  
-                    font-size: 20px;
-                    height: 50px;
-                    width: 300px;
-                }
-            }
-            .comentarios{
-                padding: 10px 10px 10px 20px;
-                .textarea{
-                    font-size: 20px;
-                    height: 200px;
-                    width: 300px;
-                }
-            }
-            .botones{
+            height: 100vh;
+            width: 100%;
+            .titulo-contactanos{
+                font-size: 40px;
                 padding: 0px;
-                font-size: 15px;
             }
-        }
-        .redes{
-            .insta{
-                height: 80px;
-                width: 80px;
-                font-size:60px;
+            .redes-formulario{
+                width: 80%;
             }
-            .insta:hover{
-                height: 80px;
-                width: 50vh;
-                font-size: 50px;
-                .titulo-insta{
-                    padding: 20px 20px 20px 10px;
-                    font-size: 25px;
+            .formulario{
+                margin: 20px 00px 20px 0px;
+                .datos{
+                    .titulo-datos{
+                        font-size: 30px;
+                    }
+                    font-size: 30px;
+                    .label-datos{
+                        font-size: 50px;
+                    }
+                    .input-datos{  
+                        font-size: 20px;
+                        height: 50px;
+                        width: 300px;
+                    }
+                }
+                .comentarios{
+                    padding: 10px 10px 10px 20px;
+                    .textarea{
+                        font-size: 20px;
+                        height: 200px;
+                        width: 300px;
+                    }
+                }
+                .botones{
+                    padding: 0px;
+                    font-size: 15px;
                 }
             }
-            .twitter{
-                height: 80px;
-                width: 80px;
-                font-size:60px;
-            }
-            .twitter:hover{
-                height: 80px;
-                width: 50vh;
-                font-size: 50px;
-                .titulo-twitter{
-                    padding: 20px 20px 20px 10px;
-                    font-size: 23px;
+            .redes{
+                .insta{
+                    height: 80px;
+                    width: 80px;
+                    font-size:60px;
+                }
+                .insta:hover{
+                    height: 80px;
+                    width: 50vh;
+                    font-size: 50px;
+                    .titulo-insta{
+                        padding: 20px 20px 20px 10px;
+                        font-size: 25px;
+                    }
+                }
+                .twitter{
+                    height: 80px;
+                    width: 80px;
+                    font-size:60px;
+                }
+                .twitter:hover{
+                    height: 80px;
+                    width: 50vh;
+                    font-size: 50px;
+                    .titulo-twitter{
+                        padding: 20px 20px 20px 10px;
+                        font-size: 23px;
+                    }
+                }
+                .youtube{
+                    height: 80px;
+                    width: 80px;
+                    font-size:60px;
+                }
+                .youtube:hover{
+                    height: 80px;
+                    width: 50vh;
+                    font-size: 50px;
+                    .titulo-youtube{
+                        padding: 20px 20px 20px 10px;
+                        font-size: 25px;
+                    }
+                }
+                .steam{
+                    height: 80px;
+                    width: 80px;
+                    font-size:60px;
+                }
+                .steam:hover{
+                    height: 80px;
+                    width: 50vh;
+                    font-size: 50px;
+                    .titulo-steam{
+                        padding: 20px 20px 20px 10px;
+                        font-size: 25px;
+                    }
+                }
+                .twitch{
+                    height: 80px;
+                    width: 80px;
+                    font-size:60px;
+                }
+                .twitch:hover{
+                    height: 80px;
+                    width: 50vh;
+                    font-size: 50px;
+                    .titulo-twitch{
+                        padding: 20px 20px 20px 10px;
+                        font-size: 25px;
+                    }
                 }
             }
-            .youtube{
-                height: 80px;
-                width: 80px;
-                font-size:60px;
-            }
-            .youtube:hover{
-                height: 80px;
-                width: 50vh;
-                font-size: 50px;
-                .titulo-youtube{
-                    padding: 20px 20px 20px 10px;
-                    font-size: 25px;
-                }
-            }
-            .steam{
-                height: 80px;
-                width: 80px;
-                font-size:60px;
-            }
-            .steam:hover{
-                height: 80px;
-                width: 50vh;
-                font-size: 50px;
-                .titulo-steam{
-                    padding: 20px 20px 20px 10px;
-                    font-size: 25px;
-                }
-            }
-            .twitch{
-                height: 80px;
-                width: 80px;
-                font-size:60px;
-            }
-            .twitch:hover{
-                height: 80px;
-                width: 50vh;
-                font-size: 50px;
-                .titulo-twitch{
-                    padding: 20px 20px 20px 10px;
-                    font-size: 25px;
-                }
-            }
         }
-    }
-    .merchandise{
-        .zelda{
-            padding: 10px;
-            .card{
-                margin: 3px;
-                color: #131313;
-                text-shadow: 1px 0px 2px #0074c2;
-                min-width: 12rem;
-                background-color: rgba(247, 92, 25, 0.7098039216);
-                border: 1px solid rgb(186, 186, 186);
-            }
-            .titulo-filtro{
-                font-size: 20px;
-                height: 20px;
-                width: 20px;
-                margin-top: 10px;
-                padding: 10px;
-            }
-        }
-        .dst{
-            padding: 10px;
-            .card{
-                margin: 3px;
-            }
-        }
-        .colossus{
-            padding: 10px;
-            .card{
-                margin: 3px;
-            }
-        }
-        .titulotienda{
-            font-size: 30px;
-            padding: 10px;
-        }
-        .titulo-filtro{
-            font-size: 20px;
-            display: inline;
-            height: 20px;
-            width: 20px;
-            margin-top: 10px;
-            padding: 10px;
-        }
-        .filtro-selector, .filtro-label{
-            padding-right: 20px;
-        }
-        .filtro-selector, .filtro-label, .titulo-filtro{
-            font-size: 17px;
-            height: 10px;
-            width: 10px;
-            margin-top: 10px;
-        }
-
-    }
-        .merch{
-            padding: 30px;
-            .new-arrivals{
-                font-family:'Kanit', sans-serif;
-                font-weight:bolder;
-                color:#F75A19;
-                text-shadow: 1px 0px 5px #0065A8;
-                text-align: center;
-                font-size: 80px;
-                padding: 40px;
-            }
-            .carousel-caption {
-                background-color: #f75c19b8;
-                border-radius: 5px;
-                color: #131313;
-                font-size: 20px;
-            }
-            .carousel-control-prev {
-                color: transparent;
-                text-align: center;
-            }
-            .carousel-control-next {
-                color: transparent;
-                text-align: center;
-            }
-        }
-        .boton-tienda{
-            position:fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #235475;
-            border-radius: 100px;
-            border: solid 50px #235475;
-            line-height: 50px;
-            .fa-cart-shopping{
-                color: #F75A19;
-                font-size: 100px;
-            }  
-        }
-    }
-    #zelda:checked ~	#cards  .dont-starve, #zelda:checked ~	#cards .colossus{
-        display: none;
-    }
-    #dont-starve:checked ~	#cards .zelda, #dont-starve:checked ~	#cards .colossus{
-        display: none;
-    }
-    #colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve{
-        display: none;
     }
     .dst-page{
         .dst-grid{

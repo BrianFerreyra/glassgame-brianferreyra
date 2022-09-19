@@ -1422,12 +1422,12 @@
   }
   .juegos {
     background-color: #131313;
-    height: 80vh;
+    height: 100%;
     width: 100%;
   }
   .juegos .contenedor-titulo {
     text-align: center;
-    padding: 30px;
+    padding: 10px;
   }
   .juegos .contenedor-titulo .titulo-games {
     font-size: 50px;
@@ -1443,10 +1443,11 @@
   }
   .juegos .contenedor-juegos .portadas {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 50px;
     align-content: stretch;
     align-items: center;
+    padding: 10px 0px 10px 10px;
   }
   .juegos .contenedor-juegos .portadas a {
     transform: skew(-6deg);
@@ -1454,41 +1455,41 @@
   .juegos .contenedor-juegos .portadas .link-dst {
     background-image: url(../multimedia/Dst.jpg);
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-position: top;
+    height: 150px;
     width: 350px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px 0px 5px 0px;
   }
   .juegos .contenedor-juegos .portadas .link-zelda {
     background-image: url(../multimedia/zbotw.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 200px;
+    height: 150px;
     width: 350px;
     border-radius: solid 5px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px 0px 5px 0px;
   }
   .juegos .contenedor-juegos .portadas .link-colossus {
     background-image: url(../multimedia/sotc.webp);
     background-size: cover;
-    background-position: top;
-    height: 200px;
+    background-position: center;
+    height: 150px;
     width: 350px;
     border-radius: solid 5px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px 0px 5px 0px;
   }
   .juegos .contenedor-juegos .portadas .link-mgs {
     background-image: url(../multimedia/mgs1.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 200px;
+    height: 150px;
     width: 350px;
     border-radius: solid 5px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px 0px 5px 0px;
   }
   .contacto {
     height: 100vh;
@@ -1600,109 +1601,7 @@
     padding: 20px 20px 20px 10px;
     font-size: 25px;
   }
-  .merchandise .zelda {
-    padding: 10px;
-  }
-  .merchandise .zelda .card {
-    margin: 3px;
-    color: #131313;
-    text-shadow: 1px 0px 2px #0074c2;
-    min-width: 12rem;
-    background-color: rgba(247, 92, 25, 0.7098039216);
-    border: 1px solid rgb(186, 186, 186);
-  }
-  .merchandise .zelda .titulo-filtro {
-    font-size: 20px;
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .merchandise .dst {
-    padding: 10px;
-  }
-  .merchandise .dst .card {
-    margin: 3px;
-  }
-  .merchandise .colossus {
-    padding: 10px;
-  }
-  .merchandise .colossus .card {
-    margin: 3px;
-  }
-  .merchandise .titulotienda {
-    font-size: 30px;
-    padding: 10px;
-  }
-  .merchandise .titulo-filtro {
-    font-size: 20px;
-    display: inline;
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .merchandise .filtro-selector, .merchandise .filtro-label {
-    padding-right: 20px;
-  }
-  .merchandise .filtro-selector, .merchandise .filtro-label, .merchandise .titulo-filtro {
-    font-size: 17px;
-    height: 10px;
-    width: 10px;
-    margin-top: 10px;
-  }
-  .merch {
-    padding: 30px;
-  }
-  .merch .new-arrivals {
-    font-family: "Kanit", sans-serif;
-    font-weight: bolder;
-    color: #F75A19;
-    text-shadow: 1px 0px 5px #0065A8;
-    text-align: center;
-    font-size: 80px;
-    padding: 40px;
-  }
-  .merch .carousel-caption {
-    background-color: rgba(247, 92, 25, 0.7215686275);
-    border-radius: 5px;
-    color: #131313;
-    font-size: 20px;
-  }
-  .merch .carousel-control-prev {
-    color: transparent;
-    text-align: center;
-  }
-  .merch .carousel-control-next {
-    color: transparent;
-    text-align: center;
-  }
-  .boton-tienda {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #235475;
-    border-radius: 100px;
-    border: solid 50px #235475;
-    line-height: 50px;
-  }
-  .boton-tienda .fa-cart-shopping {
-    color: #F75A19;
-    font-size: 100px;
-  }
 }
-#zelda:checked ~ #cards .dont-starve, #zelda:checked ~ #cards .colossus {
-  display: none;
-}
-
-#dont-starve:checked ~ #cards .zelda, #dont-starve:checked ~ #cards .colossus {
-  display: none;
-}
-
-#colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve {
-  display: none;
-}
-
 .dst-page .dst-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
