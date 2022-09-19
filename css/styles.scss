@@ -3314,5 +3314,46 @@ $grisclaro:rgb(186, 186, 186);
                 }
             }
         }
+        .merchandise{
+            .titulotienda{
+                font-weight:700;
+                font-size: 50px;
+                padding: 20px;
+            }
+            .titulo-filtro{
+                padding: 30px;
+            }
+            .filtro-selector, .filtro-label{
+                padding-right: 20px;
+            }
+            .filtro-selector, .filtro-label, .titulo-filtro{
+                font-size: 30px;
+                height: 20px;
+                width: 20px;   
+                margin-top: 40px;
+            }
+            #cards{
+                justify-items: center;
+                grid-row: 2/3;
+                .zelda {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 40px;
+                }
+                .dont-starve{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 40px;
+                }
+                .colossus{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 40px;
+                }
+            }
+        }
     }
 
