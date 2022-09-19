@@ -61,53 +61,6 @@
   margin: 0px;
 }
 
-.footer {
-  background-color: #131313;
-  width: 100%;
-  height: auto;
-}
-.footer .foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-content: center;
-  padding: 20px 0px 20px;
-}
-.footer .foot .logo-footer {
-  height: 250px;
-}
-.footer .foot .redes {
-  color: #dbdbdb;
-  font-size: 50px;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: row;
-}
-.footer .foot .redes .fa-brands {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer .foot .redes .redes-titulo {
-  color: #dbdbdb;
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-}
-.footer .foot .redes .redes-titulo h4 {
-  font-size: 35px;
-}
-.footer .copyright {
-  text-align: center;
-  color: #676565;
-  font-size: 40px;
-  font-family: "Kanit", sans-serif;
-  margin: 0px;
-}
-
 .main {
   width: 100%;
 }
@@ -291,6 +244,53 @@
   font-size: 30px;
   color: #0074C2;
   font-family: "Kanit", sans-serif;
+}
+
+.footer {
+  background-color: #131313;
+  width: 100%;
+  height: auto;
+}
+.footer .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px 0px 20px;
+}
+.footer .foot .logo-footer {
+  height: 250px;
+}
+.footer .foot .redes {
+  color: #dbdbdb;
+  font-size: 50px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer .foot .redes .fa-brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .foot .redes .redes-titulo {
+  color: #dbdbdb;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.footer .foot .redes .redes-titulo h4 {
+  font-size: 35px;
+}
+.footer .copyright {
+  text-align: center;
+  color: #676565;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  margin: 0px;
 }
 
 .dst-page {
@@ -640,7 +640,6 @@
 .zelda-page .novedades .zelda-parche {
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  font-size: 30px;
   padding: 30px 0px 30px 0px;
 }
 .zelda-page .novedades ul {
@@ -1324,6 +1323,12 @@
   .header {
     width: 100%;
   }
+  .header .logo {
+    height: 100px;
+  }
+  .header .titulo-glass-game {
+    font-size: 50px;
+  }
   .navegador {
     background-color: #0074C2;
     display: flex;
@@ -1341,16 +1346,16 @@
     font-size: 20px;
   }
   .footer .foot .logo-footer {
-    height: 150px;
+    height: 100px;
   }
   .footer .foot .redes {
-    font-size: 30px;
+    font-size: 20px;
   }
   .footer .foot .redes .redes-titulo {
-    font-size: 20px;
+    font-size: 10px;
   }
   .footer .foot .redes .redes-titulo h4 {
-    font-size: 20px;
+    font-size: 10px;
   }
   .footer .copyright {
     font-size: 20px;
@@ -1414,6 +1419,76 @@
     height: auto;
     width: auto;
     font-size: 15px;
+  }
+  .juegos {
+    background-color: #131313;
+    height: 80vh;
+    width: 100%;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 70px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    width: 350px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: top;
+    height: 200px;
+    width: 350px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    width: 350px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 971px) and (max-width: 1400px) {
@@ -1512,6 +1587,73 @@
     width: auto;
     font-size: 15px;
   }
+  .juegos {
+    background-color: #131313;
+    height: 80vh;
+    width: 100%;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 70px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 600px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 600px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 600px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 600px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
 }
 @media only screen and (min-width: 1400px) and (max-width: 2560px) {
   .header {
@@ -1608,6 +1750,73 @@
     height: auto;
     width: auto;
     font-size: 15px;
+  }
+  .juegos {
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 70px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
   }
 }
 
