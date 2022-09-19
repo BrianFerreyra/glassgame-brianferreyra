@@ -1152,173 +1152,6 @@
   text-shadow: 1px 0px 3px #0093F5;
 }
 
-.merchandise {
-  background-image: linear-gradient(to bottom, rgba(240, 248, 255, 0.61) 99.9%, rgba(255, 0, 0, 0)), url(../multimedia/patron-back.webp);
-}
-.merchandise .titulotienda {
-  font-family: "Kanit", sans-serif;
-  font-style: bold;
-  font-weight: 700;
-  background-color: #F75A19;
-  text-shadow: 3px 0px 4px #0093F5;
-  color: #ffffff;
-  font-size: 50px;
-  text-align: center;
-  padding: 20px;
-}
-.merchandise .titulo-filtro {
-  padding: 30px;
-}
-.merchandise .filtro-selector, .merchandise .filtro-label {
-  padding-right: 20px;
-}
-.merchandise .filtro-selector, .merchandise .filtro-label, .merchandise .titulo-filtro {
-  font-size: 30px;
-  display: inline;
-  height: 20px;
-  width: 20px;
-  margin-top: 40px;
-}
-.merchandise #cards {
-  justify-items: center;
-  grid-row: 2/3;
-}
-.merchandise #cards .zelda {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px;
-}
-.merchandise #cards .dont-starve {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px;
-}
-.merchandise #cards .colossus {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px;
-}
-.merchandise #cards .card {
-  color: #131313;
-  text-shadow: 1px 0px 2px #0074C2;
-  min-width: 45rem;
-  background-color: rgba(247, 92, 25, 0.7098039216);
-  border: 1px solid rgb(186, 186, 186);
-}
-.merchandise #cards .card .card-img-top {
-  height: 780px;
-}
-.merchandise #cards .card .card-title {
-  font-family: "Kanit", sans-serif;
-  font-style: bold;
-  font-weight: 400;
-  font-size: 40px;
-  text-align: center;
-}
-.merchandise #cards .card .card-body {
-  flex: none;
-}
-.merchandise #cards .card .list-group-flush .list-group-item {
-  border: none;
-  color: #131313;
-  font-family: "Noto Serif Georgian", serif;
-  font-weight: 800;
-  font-size: 20px;
-  justify-self: center;
-  text-align: center;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos {
-  font-size: 40px;
-  border: transparent;
-  background-color: transparent;
-  background-size: 100px;
-  display: flex;
-  text-align: right;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos .fa-regular {
-  color: red;
-  cursor: pointer;
-  text-align: right;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos .fa-solid {
-  display: none;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos:focus {
-  display: flex;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos:focus .fa-regular {
-  display: none;
-}
-.merchandise #cards .card .list-group-flush .list-group-item .favoritos:focus .fa-solid {
-  color: red;
-  display: block;
-  text-align: right;
-}
-.merchandise #cards .card .btn-group-lg > .btn, .merchandise #cards .card .btn-lg {
-  background-color: #dbdbdb;
-  border: rgb(186, 186, 186);
-  color: #0074C2;
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-  width: -webkit-fill-available;
-}
-.merchandise .merch {
-  padding: 30px;
-}
-.merchandise .merch .new-arrivals {
-  font-family: "Kanit", sans-serif;
-  font-weight: bolder;
-  color: #F75A19;
-  text-shadow: 1px 0px 5px #0065A8;
-  text-align: center;
-  font-size: 80px;
-  padding: 40px;
-}
-.merchandise .merch .carousel-caption {
-  background-color: rgba(247, 92, 25, 0.7215686275);
-  border-radius: 5px;
-  color: #131313;
-  font-size: 20px;
-}
-.merchandise .merch .carousel-control-prev {
-  color: transparent;
-  text-align: center;
-}
-.merchandise .merch .carousel-control-next {
-  color: transparent;
-  text-align: center;
-}
-.merchandise .boton-tienda {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #235475;
-  border-radius: 100px;
-  border: solid 50px #235475;
-  line-height: 50px;
-}
-.merchandise .boton-tienda .fa-cart-shopping {
-  color: #F75A19;
-  font-size: 100px;
-}
-
-#zelda:checked ~ #cards .dont-starve, #zelda:checked ~ #cards .colossus {
-  display: none;
-}
-
-#dont-starve:checked ~ #cards .zelda, #dont-starve:checked ~ #cards .colossus {
-  display: none;
-}
-
-#colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve {
-  display: none;
-}
-
 @media only screen and (min-width: 375px) and (max-width: 970px) {
   .header {
     width: 100%;
@@ -2101,1257 +1934,863 @@
 }
 
 @media only screen and (min-width: 971px) and (max-width: 1400px) {
-  .merchandise .zelda {
+  .header {
+    width: 100%;
+  }
+  .header .logo {
+    height: 100px;
+  }
+  .header .titulo-glass-game {
+    font-size: 50px;
+  }
+  .navegador {
+    background-color: #0074C2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+  }
+  .navegador :hover {
+    background-color: #252525;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  .footer .foot .logo-footer {
+    height: 100px;
+  }
+  .footer .foot .redes {
+    font-size: 20px;
+  }
+  .footer .foot .redes .redes-titulo {
+    font-size: 10px;
+  }
+  .footer .foot .redes .redes-titulo h4 {
+    font-size: 10px;
+  }
+  .footer .copyright {
+    font-size: 20px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .main .lanzamiento {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+  }
+  .main .lanzamiento .trailer-boton {
+    height: 50px;
+    width: 50px;
+  }
+  .main .lanzamiento .trailer-boton .fa-youtube {
+    font-size: 100px;
+  }
+  .main .lanzamiento .trailer-boton:focus .zelda-gif {
+    width: 350px;
+    height: 200px;
+  }
+  .main .mainjuegos .multimediajuegos {
+    grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    padding: 50px;
+  }
+  .main .mainjuegos .multimediajuegos .metalgear {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos {
+    background-size: 500px;
+    background-position: 280px;
+    height: 200px;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
+    height: 100px;
+    translate: 20px 70px;
+  }
+  .main #nosotros {
+    width: auto;
+    height: 400px;
+    padding-bottom: 20px;
+    grid-template-rows: 10% 80%;
+  }
+  .main #nosotros h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 0px 1px #0074C2;
+  }
+  .main #nosotros .historia {
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+    background-size: cover;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+  }
+  .juegos {
+    background-color: #131313;
+    height: 80vh;
+    width: 100%;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 40px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    height: 500px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    width: 200px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    width: 200px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    width: 200px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .contacto {
+    height: 100vh;
+    width: 100%;
+  }
+  .contacto .titulo-contactanos {
+    font-size: 40px;
+    padding: 0px;
+  }
+  .contacto .redes-formulario {
+    width: 100%;
+  }
+  .contacto .formulario {
+    margin: 0px 10px 0px 10px;
+  }
+  .contacto .formulario .datos {
+    font-size: 30px;
+  }
+  .contacto .formulario .datos .titulo-datos {
+    font-size: 30px;
+  }
+  .contacto .formulario .datos .label-datos {
+    font-size: 50px;
+  }
+  .contacto .formulario .datos .input-datos {
+    font-size: 30px;
+    height: 50px;
+    width: 700px;
+  }
+  .contacto .formulario .comentarios {
+    padding: 20px;
+  }
+  .contacto .formulario .comentarios .textarea {
+    font-size: 30px;
+    height: 200px;
+    width: 700px;
+  }
+  .contacto .formulario .botones {
     padding: 10px;
+    font-size: 20px;
   }
-  .merchandise .zelda .card {
-    margin: 3px;
+  .contacto .redes .insta {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
   }
-  .merchandise .dst {
-    padding: 10px;
+  .contacto .redes .insta:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
   }
-  .merchandise .dst .card {
-    margin: 3px;
+  .contacto .redes .insta:hover .titulo-insta {
+    padding: 20px;
+    font-size: 80px;
   }
-  .merchandise .colossus {
-    padding: 10px;
+  .contacto .redes .twitter {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
   }
-  .merchandise .colossus .card {
-    margin: 3px;
+  .contacto .redes .twitter:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
   }
-  .merchandise .titulotienda {
+  .contacto .redes .twitter:hover .titulo-twitter {
+    padding: 20px;
+    font-size: 60px;
+  }
+  .contacto .redes .youtube {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .youtube:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .youtube:hover .titulo-youtube {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .contacto .redes .steam {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .steam:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .steam:hover .titulo-steam {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .contacto .redes .twitch {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .twitch:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .twitch:hover .titulo-twitch {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .metalgear-page .metalgear-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-boss {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-gif {
+    background-size: 750px 880px;
+    grid-row: 2/4;
+    grid-column: 2/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-position: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .metalgear-page .metalgear-grid .item5 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 30px;
+    padding: 40px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-titulo {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 10px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-genre {
+    font-size: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img3 {
+    grid-row: 2/2;
+    grid-column: 2/3;
+  }
+  .metalgear-page .novedades {
+    grid-row: 1/2;
+    grid-column: 3/4;
     font-size: 30px;
     padding: 10px;
   }
-  .merchandise .titulo-filtro {
+  .metalgear-page .novedades .titulo-novedades {
     font-size: 20px;
-    display: inline;
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
+  }
+  .metalgear-page .novedades .metalgear-parche {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .metalgear-page .novedades ul {
+    padding: 0px 0px 0px 20px;
+    font-size: 10px;
+  }
+  .metalgear-page .novedades li {
+    font-size: 10px;
+  }
+  .metalgear-page .novedades p {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 1rem;
+    font-size: 10px;
+  }
+  .metalgear-page .requerimientos {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .metalgear-page .requerimientos .titulo-requerimientos {
+    color: #235475;
+    font-size: 10px;
+    padding: 0px;
+    text-shadow: 1px 1px 4px #0093F5;
+  }
+  .metalgear-page .requerimientos table {
+    text-align: center;
+  }
+  .metalgear-page .requerimientos table th {
+    font-size: 10px;
     padding: 10px;
   }
-  .merchandise .filtro-selector, .merchandise .filtro-label {
-    padding-right: 20px;
+  .metalgear-page .requerimientos table td {
+    font-size: 10px;
   }
-  .merchandise .filtro-selector, .merchandise .filtro-label, .merchandise .titulo-filtro {
-    font-size: 17px;
-    height: 10px;
-    width: 10px;
-    margin-top: 10px;
+}
+@media only screen and (min-width: 971px) and (max-width: 1400px) and (min-width: 1400px) and (max-width: 2560px) {
+  .header {
+    width: 100%;
   }
-  .merchandise .card {
-    color: #131313;
-    text-shadow: 1px 0px 2px #0074C2;
-    min-width: 12rem;
-    background-color: rgba(247, 92, 25, 0.7098039216);
-    border: 1px solid rgb(186, 186, 186);
-  }
-  .merchandise .card .card-img-top {
-    height: 100px;
-    width: 190px;
-  }
-  .merchandise .card .card-title {
-    font-family: "Kanit", sans-serif;
-    font-style: bold;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-  }
-  .merchandise .card .card-body {
-    flex: none;
-  }
-  .merchandise .card .list-group-flush .list-group-item {
-    border: none;
-    color: #131313;
-    font-family: "Noto Serif Georgian", serif;
-    font-weight: 800;
-    font-size: 20px;
-    justify-self: center;
-    text-align: center;
-    padding: 5px 0px 0px 0px;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos {
-    font-size: 40px;
-    border: transparent;
-    background-color: transparent;
-    background-size: 100px;
+  .navegador {
+    background-color: #0074C2;
     display: flex;
-    text-align: right;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos .fa-regular {
-    color: red;
-    cursor: pointer;
-    text-align: right;
-    font-size: 25px;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos .fa-solid {
-    display: none;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus {
-    display: flex;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus .fa-regular {
-    display: none;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus .fa-solid {
-    color: red;
-    display: block;
-    text-align: right;
-    font-size: 25px;
-  }
-  .merchandise .card .btn-group-lg > .btn, .merchandise .card .btn-lg {
-    background-color: #dbdbdb;
-    border: rgb(186, 186, 186);
-    color: #0074C2;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-    width: -webkit-fill-available;
-  }
-  .merch {
-    padding: 30px;
-  }
-  .merch .new-arrivals {
-    font-family: "Kanit", sans-serif;
-    font-weight: bolder;
-    color: #F75A19;
-    text-shadow: 1px 0px 5px #0065A8;
+    justify-content: center;
     text-align: center;
-    font-size: 80px;
-    padding: 40px;
+    list-style: none;
+    margin: 0px;
   }
-  .merch .carousel-caption {
-    background-color: rgba(247, 92, 25, 0.7215686275);
-    border-radius: 5px;
-    color: #131313;
+  .navegador :hover {
+    background-color: #252525;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .nav {
     font-size: 20px;
   }
-  .merch .carousel-control-prev {
-    color: transparent;
-    text-align: center;
+  .footer .foot .logo-footer {
+    height: 150px;
   }
-  .merch .carousel-control-next {
-    color: transparent;
-    text-align: center;
+  .footer .foot .redes {
+    font-size: 30px;
   }
-  .boton-tienda {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #235475;
-    border-radius: 100px;
-    border: solid 50px #235475;
-    line-height: 50px;
+  .footer .foot .redes .redes-titulo {
+    font-size: 20px;
   }
-  .boton-tienda .fa-cart-shopping {
-    color: #F75A19;
+  .footer .foot .redes .redes-titulo h4 {
+    font-size: 20px;
+  }
+  .footer .copyright {
+    font-size: 20px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .main .lanzamiento {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    height: 100vh;
+  }
+  .main .lanzamiento .trailer-boton {
+    height: 50px;
+    width: 50px;
+  }
+  .main .lanzamiento .trailer-boton .fa-youtube {
     font-size: 100px;
   }
-}
-#zelda:checked ~ #cards .dont-starve, #zelda:checked ~ #cards .colossus {
-  display: none;
-}
-
-#dont-starve:checked ~ #cards .zelda, #dont-starve:checked ~ #cards .colossus {
-  display: none;
-}
-
-#colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve {
-  display: none;
-}
-
-.header {
-  width: 100%;
-}
-.header .logo {
-  height: 100px;
-}
-.header .titulo-glass-game {
-  font-size: 50px;
-}
-
-.navegador {
-  background-color: #0074C2;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  margin: 0px;
-}
-.navegador :hover {
-  background-color: #252525;
-  color: aliceblue;
-  text-decoration: none;
-}
-
-.nav {
-  font-size: 20px;
-}
-
-.footer .foot .logo-footer {
-  height: 100px;
-}
-.footer .foot .redes {
-  font-size: 20px;
-}
-.footer .foot .redes .redes-titulo {
-  font-size: 10px;
-}
-.footer .foot .redes .redes-titulo h4 {
-  font-size: 10px;
-}
-.footer .copyright {
-  font-size: 20px;
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-}
-.main .lanzamiento {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
-}
-.main .lanzamiento .trailer-boton {
-  height: 50px;
-  width: 50px;
-}
-.main .lanzamiento .trailer-boton .fa-youtube {
-  font-size: 100px;
-}
-.main .lanzamiento .trailer-boton:focus .zelda-gif {
-  width: 350px;
-  height: 200px;
-}
-.main .mainjuegos .multimediajuegos {
-  grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
-  grid-template-rows: 200px 200px 200px;
-  padding: 50px;
-}
-.main .mainjuegos .multimediajuegos .metalgear {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  background-image: url(../multimedia/mgs1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main .mainjuegos .multimediajuegos .contenedor-juegos {
-  background-size: 500px;
-  background-position: 280px;
-  height: 200px;
-}
-.main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
-  height: 100px;
-  translate: 20px 70px;
-}
-.main #nosotros {
-  width: auto;
-  height: 400px;
-  padding-bottom: 20px;
-  grid-template-rows: 10% 80%;
-}
-.main #nosotros h3 {
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 1px 0px 1px #0074C2;
-}
-.main #nosotros .historia {
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
-  background-size: cover;
-  height: auto;
-  width: auto;
-  font-size: 15px;
-}
-
-.juegos {
-  background-color: #131313;
-  height: 80vh;
-  width: 100%;
-}
-.juegos .contenedor-titulo {
-  text-align: center;
-  padding: 30px;
-}
-.juegos .contenedor-titulo .titulo-games {
-  font-size: 40px;
-  justify-self: center;
-  align-self: center;
-  color: #ffffff;
-  font-family: "Kanit", sans-serif;
-  font-weight: 800;
-  text-shadow: 2px 0px 3px #0093F5;
-}
-.juegos .contenedor-juegos {
-  background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
-}
-.juegos .contenedor-juegos .portadas {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-  align-content: stretch;
-  align-items: center;
-}
-.juegos .contenedor-juegos .portadas a {
-  transform: skew(-6deg);
-}
-.juegos .contenedor-juegos .portadas .link-dst {
-  background-image: url(../multimedia/Dst.jpg);
-  background-size: cover;
-  background-position: 0px 0px;
-  height: 500px;
-  width: 200px;
-  border-radius: 10px;
-  margin: 0px 10px;
-}
-.juegos .contenedor-juegos .portadas .link-zelda {
-  background-image: url(../multimedia/zbotw.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 500px;
-  width: 200px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-  margin: 0px 10px;
-}
-.juegos .contenedor-juegos .portadas .link-colossus {
-  background-image: url(../multimedia/sotc.webp);
-  background-size: cover;
-  background-position: top;
-  height: 500px;
-  width: 200px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-  margin: 0px 10px;
-}
-.juegos .contenedor-juegos .portadas .link-mgs {
-  background-image: url(../multimedia/mgs1.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 500px;
-  width: 200px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-  margin: 0px 10px;
-}
-
-.contacto {
-  height: 100vh;
-  width: 100%;
-}
-.contacto .titulo-contactanos {
-  font-size: 40px;
-  padding: 0px;
-}
-.contacto .redes-formulario {
-  width: 100%;
-}
-.contacto .formulario {
-  margin: 0px 10px 0px 10px;
-}
-.contacto .formulario .datos {
-  font-size: 30px;
-}
-.contacto .formulario .datos .titulo-datos {
-  font-size: 30px;
-}
-.contacto .formulario .datos .label-datos {
-  font-size: 50px;
-}
-.contacto .formulario .datos .input-datos {
-  font-size: 30px;
-  height: 50px;
-  width: 700px;
-}
-.contacto .formulario .comentarios {
-  padding: 20px;
-}
-.contacto .formulario .comentarios .textarea {
-  font-size: 30px;
-  height: 200px;
-  width: 700px;
-}
-.contacto .formulario .botones {
-  padding: 10px;
-  font-size: 20px;
-}
-.contacto .redes .insta {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .insta:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .insta:hover .titulo-insta {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .twitter {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .twitter:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .twitter:hover .titulo-twitter {
-  padding: 20px;
-  font-size: 60px;
-}
-.contacto .redes .youtube {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .youtube:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .youtube:hover .titulo-youtube {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .steam {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .steam:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .steam:hover .titulo-steam {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .twitch {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .twitch:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .twitch:hover .titulo-twitch {
-  padding: 20px;
-  font-size: 80px;
-}
-
-.metalgear-page .metalgear-grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-boss {
-  grid-row: 4/5;
-  grid-column: 1/4;
-}
-.metalgear-page .metalgear-grid .metalgear-gif {
-  background-size: 750px 880px;
-  grid-row: 2/4;
-  grid-column: 2/4;
-}
-.metalgear-page .metalgear-grid .metalgear-img {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  background-position: 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-img2 {
-  grid-row: 3/4;
-  grid-column: 1/2;
-}
-.metalgear-page .metalgear-grid .item5 {
-  grid-row: 1/2;
-  grid-column: 1/3;
-}
-.metalgear-page .metalgear-grid .metalgear-texto {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  font-size: 30px;
-  padding: 40px;
-}
-.metalgear-page .metalgear-grid .metalgear-texto .metalgear-titulo {
-  font-size: 21px;
-  font-weight: 600;
-}
-.metalgear-page .metalgear-grid .metalgear-texto p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 10px;
-}
-.metalgear-page .metalgear-grid .metalgear-texto .metalgear-genre {
-  font-size: 10px;
-  padding: 10px 0px 10px 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-img3 {
-  grid-row: 2/2;
-  grid-column: 2/3;
-}
-.metalgear-page .novedades {
-  grid-row: 1/2;
-  grid-column: 3/4;
-  font-size: 30px;
-  padding: 10px;
-}
-.metalgear-page .novedades .titulo-novedades {
-  font-size: 20px;
-}
-.metalgear-page .novedades .metalgear-parche {
-  font-size: 10px;
-  padding: 0px;
-}
-.metalgear-page .novedades ul {
-  padding: 0px 0px 0px 20px;
-  font-size: 10px;
-}
-.metalgear-page .novedades li {
-  font-size: 10px;
-}
-.metalgear-page .novedades p {
-  padding: 0px 0px 0px 10px;
-  margin-bottom: 1rem;
-  font-size: 10px;
-}
-.metalgear-page .requerimientos {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  background-color: aliceblue;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.metalgear-page .requerimientos .titulo-requerimientos {
-  color: #235475;
-  font-size: 10px;
-  padding: 0px;
-  text-shadow: 1px 1px 4px #0093F5;
-}
-.metalgear-page .requerimientos table {
-  text-align: center;
-}
-.metalgear-page .requerimientos table th {
-  font-size: 10px;
-  padding: 10px;
-}
-.metalgear-page .requerimientos table td {
-  font-size: 10px;
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 2560px) {
-  .merchandise .zelda {
+  .main .lanzamiento .trailer-boton:focus .zelda-gif {
+    width: 700px;
+    height: 500px;
+  }
+  .main .mainjuegos .multimediajuegos {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 70px;
+    grid-template-rows: 300px 300px 300px;
+  }
+  .main .mainjuegos .multimediajuegos .metalgear {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos {
+    background-size: 500px;
+    background-position: center;
+    height: 100%;
+  }
+  .main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
+    height: 100px;
+    translate: 100px 120px;
+  }
+  .main #nosotros {
+    width: auto;
+    height: 300px;
+    padding-bottom: 10px;
+    grid-template-rows: 15% 90%;
+  }
+  .main #nosotros h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 0px 1px #0074C2;
+  }
+  .main #nosotros .historia {
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
+    background-size: cover;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+  }
+  .juegos {
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .juegos .contenedor-titulo {
+    text-align: center;
+    padding: 30px;
+  }
+  .juegos .contenedor-titulo .titulo-games {
+    font-size: 70px;
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #0093F5;
+  }
+  .juegos .contenedor-juegos {
+    background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
+  }
+  .juegos .contenedor-juegos .portadas {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+  }
+  .juegos .contenedor-juegos .portadas a {
+    transform: skew(-6deg);
+  }
+  .juegos .contenedor-juegos .portadas .link-dst {
+    background-image: url(../multimedia/Dst.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-zelda {
+    background-image: url(../multimedia/zbotw.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-colossus {
+    background-image: url(../multimedia/sotc.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .juegos .contenedor-juegos .portadas .link-mgs {
+    background-image: url(../multimedia/mgs1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+    border-radius: solid 5px;
+    border-radius: 10px;
+  }
+  .contacto {
+    height: 100vh;
+    width: 100%;
+  }
+  .contacto .titulo-contactanos {
+    font-size: 40px;
+    padding: 0px;
+  }
+  .contacto .redes-formulario {
+    width: 100%;
+  }
+  .contacto .formulario {
+    margin: 0px 10px 0px 10px;
+  }
+  .contacto .formulario .datos {
+    font-size: 30px;
+  }
+  .contacto .formulario .datos .titulo-datos {
+    font-size: 30px;
+  }
+  .contacto .formulario .datos .label-datos {
+    font-size: 50px;
+  }
+  .contacto .formulario .datos .input-datos {
+    font-size: 30px;
+    height: 50px;
+    width: 700px;
+  }
+  .contacto .formulario .comentarios {
+    padding: 20px;
+  }
+  .contacto .formulario .comentarios .textarea {
+    font-size: 30px;
+    height: 200px;
+    width: 700px;
+  }
+  .contacto .formulario .botones {
     padding: 10px;
+    font-size: 20px;
   }
-  .merchandise .zelda .card {
-    margin: 3px;
+  .contacto .redes .insta {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
   }
-  .merchandise .dst {
-    padding: 10px;
+  .contacto .redes .insta:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
   }
-  .merchandise .dst .card {
-    margin: 3px;
+  .contacto .redes .insta:hover .titulo-insta {
+    padding: 20px;
+    font-size: 80px;
   }
-  .merchandise .colossus {
-    padding: 10px;
+  .contacto .redes .twitter {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
   }
-  .merchandise .colossus .card {
-    margin: 3px;
+  .contacto .redes .twitter:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
   }
-  .merchandise .titulotienda {
+  .contacto .redes .twitter:hover .titulo-twitter {
+    padding: 20px;
+    font-size: 60px;
+  }
+  .contacto .redes .youtube {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .youtube:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .youtube:hover .titulo-youtube {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .contacto .redes .steam {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .steam:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .steam:hover .titulo-steam {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .contacto .redes .twitch {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+  }
+  .contacto .redes .twitch:hover {
+    height: 150px;
+    width: 100vh;
+    font-size: 100px;
+  }
+  .contacto .redes .twitch:hover .titulo-twitch {
+    padding: 20px;
+    font-size: 80px;
+  }
+  .metalgear-page .metalgear-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-boss {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-gif {
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-position: 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .metalgear-page .metalgear-grid .item5 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 30px;
+    padding: 40px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-titulo {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-texto .metalgear-genre {
+    font-size: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  .metalgear-page .metalgear-grid .metalgear-img3 {
+    grid-row: 2/2;
+    grid-column: 2/3;
+  }
+  .metalgear-page .novedades {
+    grid-row: 1/2;
+    grid-column: 3/4;
     font-size: 30px;
     padding: 10px;
   }
-  .merchandise .titulo-filtro {
-    font-size: 20px;
-    display: inline;
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
+  .metalgear-page .novedades .titulo-novedades {
+    font-size: 25px;
+  }
+  .metalgear-page .novedades .metalgear-parche {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .metalgear-page .novedades ul {
+    padding: 0px 0px 0px 20px;
+    font-size: 10px;
+  }
+  .metalgear-page .novedades li {
+    font-size: 10px;
+  }
+  .metalgear-page .novedades p {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .metalgear-page .requerimientos {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .metalgear-page .requerimientos .titulo-requerimientos {
+    color: #235475;
+    font-size: 15px;
+    padding: 0px;
+    text-shadow: 1px 1px 4px #0093F5;
+  }
+  .metalgear-page .requerimientos table {
+    text-align: center;
+  }
+  .metalgear-page .requerimientos table th {
+    font-size: 15px;
     padding: 10px;
   }
-  .merchandise .filtro-selector, .merchandise .filtro-label {
-    padding-right: 20px;
+  .metalgear-page .requerimientos table td {
+    font-size: 15px;
   }
-  .merchandise .filtro-selector, .merchandise .filtro-label, .merchandise .titulo-filtro {
-    font-size: 17px;
-    height: 10px;
-    width: 10px;
-    margin-top: 10px;
+  .colossus-page .colossus-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0px;
   }
-  .merchandise .card {
-    color: #131313;
-    text-shadow: 1px 0px 2px #0074C2;
-    min-width: 12rem;
-    background-color: rgba(247, 92, 25, 0.7098039216);
-    border: 1px solid rgb(186, 186, 186);
+  .colossus-page .colossus-grid .colossus-boss {
+    grid-row: 1/3;
+    grid-column: 2/4;
   }
-  .merchandise .card .card-img-top {
-    height: 100px;
-    width: 190px;
+  .colossus-page .colossus-grid .colossus-gif {
+    background-size: 750px 880px;
+    grid-row: 2/3;
+    grid-column: 2/4;
   }
-  .merchandise .card .card-title {
-    font-family: "Kanit", sans-serif;
-    font-style: bold;
-    font-weight: 400;
+  .colossus-page .colossus-grid .colossus-img {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-position: center;
+  }
+  .colossus-page .colossus-grid .colossus-img2 {
+    grid-row: 4/5;
+    grid-column: 2/5;
+  }
+  .colossus-page .colossus-grid .colossus-texto {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .colossus-page .colossus-grid .colossus-texto .colossus-titulo {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .colossus-page .colossus-grid .colossus-texto p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 8px;
+  }
+  .colossus-page .colossus-grid .colossus-texto .colossus-genre {
+    font-size: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  .colossus-page .colossus-grid .colossus-img3 {
+    grid-row: 3/4;
+    grid-column: 1/5;
+  }
+  .colossus-page .novedades {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .colossus-page .novedades .titulo-novedades {
     font-size: 20px;
-    text-align: center;
   }
-  .merchandise .card .card-body {
-    flex: none;
+  .colossus-page .novedades .colossus-parche {
+    font-size: 10px;
+    padding: 0px;
   }
-  .merchandise .card .list-group-flush .list-group-item {
-    border: none;
-    color: #131313;
-    font-family: "Noto Serif Georgian", serif;
-    font-weight: 800;
-    font-size: 20px;
-    justify-self: center;
-    text-align: center;
-    padding: 5px 0px 0px 0px;
+  .colossus-page .novedades ul {
+    padding: 0px 0px 0px 20px;
+    font-size: 10px;
   }
-  .merchandise .card .list-group-flush .list-group-item .favoritos {
-    font-size: 40px;
-    border: transparent;
-    background-color: transparent;
-    background-size: 100px;
+  .colossus-page .novedades li {
+    font-size: 10px;
+  }
+  .colossus-page .novedades p {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 1rem;
+    font-size: 8px;
+  }
+  .colossus-page .requerimientos {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: aliceblue;
+    width: 100%;
     display: flex;
-    text-align: right;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
   }
-  .merchandise .card .list-group-flush .list-group-item .favoritos .fa-regular {
-    color: red;
-    cursor: pointer;
-    text-align: right;
-    font-size: 25px;
+  .colossus-page .requerimientos .titulo-requerimientos {
+    color: #235475;
+    font-size: 10px;
+    padding: 0px;
+    text-shadow: 1px 1px 4px #0093F5;
   }
-  .merchandise .card .list-group-flush .list-group-item .favoritos .fa-solid {
-    display: none;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus {
-    display: flex;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus .fa-regular {
-    display: none;
-  }
-  .merchandise .card .list-group-flush .list-group-item .favoritos:focus .fa-solid {
-    color: red;
-    display: block;
-    text-align: right;
-    font-size: 25px;
-  }
-  .merchandise .card .btn-group-lg > .btn, .merchandise .card .btn-lg {
-    background-color: #dbdbdb;
-    border: rgb(186, 186, 186);
-    color: #0074C2;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-    width: -webkit-fill-available;
-  }
-  .merch {
-    padding: 30px;
-  }
-  .merch .new-arrivals {
-    font-family: "Kanit", sans-serif;
-    font-weight: bolder;
-    color: #F75A19;
-    text-shadow: 1px 0px 5px #0065A8;
-    text-align: center;
-    font-size: 80px;
-    padding: 40px;
-  }
-  .merch .carousel-caption {
-    background-color: rgba(247, 92, 25, 0.7215686275);
-    border-radius: 5px;
-    color: #131313;
-    font-size: 20px;
-  }
-  .merch .carousel-control-prev {
-    color: transparent;
+  .colossus-page .requerimientos table {
     text-align: center;
   }
-  .merch .carousel-control-next {
-    color: transparent;
-    text-align: center;
+  .colossus-page .requerimientos table th {
+    font-size: 10px;
+    padding: 10px;
   }
-  .boton-tienda {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #235475;
-    border-radius: 100px;
-    border: solid 50px #235475;
-    line-height: 50px;
+  .colossus-page .requerimientos table td {
+    font-size: 10px;
   }
-  .boton-tienda .fa-cart-shopping {
-    color: #F75A19;
-    font-size: 100px;
-  }
-}
-#zelda:checked ~ #cards .dont-starve, #zelda:checked ~ #cards .colossus {
-  display: none;
-}
-
-#dont-starve:checked ~ #cards .zelda, #dont-starve:checked ~ #cards .colossus {
-  display: none;
-}
-
-#colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve {
-  display: none;
-}
-
-.header {
-  width: 100%;
-}
-
-.navegador {
-  background-color: #0074C2;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  margin: 0px;
-}
-.navegador :hover {
-  background-color: #252525;
-  color: aliceblue;
-  text-decoration: none;
-}
-
-.nav {
-  font-size: 20px;
-}
-
-.footer .foot .logo-footer {
-  height: 150px;
-}
-.footer .foot .redes {
-  font-size: 30px;
-}
-.footer .foot .redes .redes-titulo {
-  font-size: 20px;
-}
-.footer .foot .redes .redes-titulo h4 {
-  font-size: 20px;
-}
-.footer .copyright {
-  font-size: 20px;
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-}
-.main .lanzamiento {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
-  height: 100vh;
-}
-.main .lanzamiento .trailer-boton {
-  height: 50px;
-  width: 50px;
-}
-.main .lanzamiento .trailer-boton .fa-youtube {
-  font-size: 100px;
-}
-.main .lanzamiento .trailer-boton:focus .zelda-gif {
-  width: 700px;
-  height: 500px;
-}
-.main .mainjuegos .multimediajuegos {
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  padding: 70px;
-  grid-template-rows: 300px 300px 300px;
-}
-.main .mainjuegos .multimediajuegos .metalgear {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  background-image: url(../multimedia/mgs1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main .mainjuegos .multimediajuegos .contenedor-juegos {
-  background-size: 500px;
-  background-position: center;
-  height: 100%;
-}
-.main .mainjuegos .multimediajuegos .contenedor-juegos .logo-juegos {
-  height: 100px;
-  translate: 100px 120px;
-}
-.main #nosotros {
-  width: auto;
-  height: 300px;
-  padding-bottom: 10px;
-  grid-template-rows: 15% 90%;
-}
-.main #nosotros h3 {
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 1px 0px 1px #0074C2;
-}
-.main #nosotros .historia {
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, #252525 95%), url(../multimedia/team.jpg);
-  background-size: cover;
-  height: auto;
-  width: auto;
-  font-size: 15px;
-}
-
-.juegos {
-  background-color: #131313;
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
-.juegos .contenedor-titulo {
-  text-align: center;
-  padding: 30px;
-}
-.juegos .contenedor-titulo .titulo-games {
-  font-size: 70px;
-  justify-self: center;
-  align-self: center;
-  color: #ffffff;
-  font-family: "Kanit", sans-serif;
-  font-weight: 800;
-  text-shadow: 2px 0px 3px #0093F5;
-}
-.juegos .contenedor-juegos {
-  background-image: linear-gradient(to right, #131313 7%, #0074C2 20%);
-}
-.juegos .contenedor-juegos .portadas {
-  display: flex;
-  justify-content: space-around;
-  align-content: stretch;
-  align-items: center;
-}
-.juegos .contenedor-juegos .portadas a {
-  transform: skew(-6deg);
-}
-.juegos .contenedor-juegos .portadas .link-dst {
-  background-image: url(../multimedia/Dst.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 300px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-}
-.juegos .contenedor-juegos .portadas .link-zelda {
-  background-image: url(../multimedia/zbotw.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 300px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-}
-.juegos .contenedor-juegos .portadas .link-colossus {
-  background-image: url(../multimedia/sotc.webp);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 300px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-}
-.juegos .contenedor-juegos .portadas .link-mgs {
-  background-image: url(../multimedia/mgs1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 300px;
-  border-radius: solid 5px;
-  border-radius: 10px;
-}
-
-.contacto {
-  height: 100vh;
-  width: 100%;
-}
-.contacto .titulo-contactanos {
-  font-size: 40px;
-  padding: 0px;
-}
-.contacto .redes-formulario {
-  width: 100%;
-}
-.contacto .formulario {
-  margin: 0px 10px 0px 10px;
-}
-.contacto .formulario .datos {
-  font-size: 30px;
-}
-.contacto .formulario .datos .titulo-datos {
-  font-size: 30px;
-}
-.contacto .formulario .datos .label-datos {
-  font-size: 50px;
-}
-.contacto .formulario .datos .input-datos {
-  font-size: 30px;
-  height: 50px;
-  width: 700px;
-}
-.contacto .formulario .comentarios {
-  padding: 20px;
-}
-.contacto .formulario .comentarios .textarea {
-  font-size: 30px;
-  height: 200px;
-  width: 700px;
-}
-.contacto .formulario .botones {
-  padding: 10px;
-  font-size: 20px;
-}
-.contacto .redes .insta {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .insta:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .insta:hover .titulo-insta {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .twitter {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .twitter:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .twitter:hover .titulo-twitter {
-  padding: 20px;
-  font-size: 60px;
-}
-.contacto .redes .youtube {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .youtube:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .youtube:hover .titulo-youtube {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .steam {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .steam:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .steam:hover .titulo-steam {
-  padding: 20px;
-  font-size: 80px;
-}
-.contacto .redes .twitch {
-  height: 100px;
-  width: 100px;
-  font-size: 80px;
-}
-.contacto .redes .twitch:hover {
-  height: 150px;
-  width: 100vh;
-  font-size: 100px;
-}
-.contacto .redes .twitch:hover .titulo-twitch {
-  padding: 20px;
-  font-size: 80px;
-}
-
-.metalgear-page .metalgear-grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-boss {
-  grid-row: 4/5;
-  grid-column: 1/4;
-}
-.metalgear-page .metalgear-grid .metalgear-gif {
-  background-size: cover;
-  background-position: center;
-  grid-row: 2/4;
-  grid-column: 3/4;
-}
-.metalgear-page .metalgear-grid .metalgear-img {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  background-position: 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-img2 {
-  grid-row: 3/4;
-  grid-column: 1/2;
-}
-.metalgear-page .metalgear-grid .item5 {
-  grid-row: 1/2;
-  grid-column: 1/3;
-}
-.metalgear-page .metalgear-grid .metalgear-texto {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  font-size: 30px;
-  padding: 40px;
-}
-.metalgear-page .metalgear-grid .metalgear-texto .metalgear-titulo {
-  font-size: 25px;
-  font-weight: 600;
-}
-.metalgear-page .metalgear-grid .metalgear-texto p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 15px;
-}
-.metalgear-page .metalgear-grid .metalgear-texto .metalgear-genre {
-  font-size: 10px;
-  padding: 10px 0px 10px 0px;
-}
-.metalgear-page .metalgear-grid .metalgear-img3 {
-  grid-row: 2/2;
-  grid-column: 2/3;
-}
-.metalgear-page .novedades {
-  grid-row: 1/2;
-  grid-column: 3/4;
-  font-size: 30px;
-  padding: 10px;
-}
-.metalgear-page .novedades .titulo-novedades {
-  font-size: 25px;
-}
-.metalgear-page .novedades .metalgear-parche {
-  font-size: 10px;
-  padding: 0px;
-}
-.metalgear-page .novedades ul {
-  padding: 0px 0px 0px 20px;
-  font-size: 10px;
-}
-.metalgear-page .novedades li {
-  font-size: 10px;
-}
-.metalgear-page .novedades p {
-  padding: 0px 0px 0px 10px;
-  margin-bottom: 1rem;
-  font-size: 15px;
-}
-.metalgear-page .requerimientos {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  background-color: aliceblue;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.metalgear-page .requerimientos .titulo-requerimientos {
-  color: #235475;
-  font-size: 15px;
-  padding: 0px;
-  text-shadow: 1px 1px 4px #0093F5;
-}
-.metalgear-page .requerimientos table {
-  text-align: center;
-}
-.metalgear-page .requerimientos table th {
-  font-size: 15px;
-  padding: 10px;
-}
-.metalgear-page .requerimientos table td {
-  font-size: 15px;
-}
-
-.colossus-page .colossus-grid {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 0px;
-}
-.colossus-page .colossus-grid .colossus-boss {
-  grid-row: 1/3;
-  grid-column: 2/4;
-}
-.colossus-page .colossus-grid .colossus-gif {
-  background-size: 750px 880px;
-  grid-row: 2/3;
-  grid-column: 2/4;
-}
-.colossus-page .colossus-grid .colossus-img {
-  grid-row: 1/2;
-  grid-column: 1/3;
-  background-position: center;
-}
-.colossus-page .colossus-grid .colossus-img2 {
-  grid-row: 4/5;
-  grid-column: 2/5;
-}
-.colossus-page .colossus-grid .colossus-texto {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  font-size: 30px;
-  padding: 20px;
-}
-.colossus-page .colossus-grid .colossus-texto .colossus-titulo {
-  font-size: 21px;
-  font-weight: 600;
-}
-.colossus-page .colossus-grid .colossus-texto p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 8px;
-}
-.colossus-page .colossus-grid .colossus-texto .colossus-genre {
-  font-size: 10px;
-  padding: 10px 0px 10px 0px;
-}
-.colossus-page .colossus-grid .colossus-img3 {
-  grid-row: 3/4;
-  grid-column: 1/5;
-}
-.colossus-page .novedades {
-  grid-row: 1/2;
-  grid-column: 3/4;
-  font-size: 30px;
-  padding: 10px;
-}
-.colossus-page .novedades .titulo-novedades {
-  font-size: 20px;
-}
-.colossus-page .novedades .colossus-parche {
-  font-size: 10px;
-  padding: 0px;
-}
-.colossus-page .novedades ul {
-  padding: 0px 0px 0px 20px;
-  font-size: 10px;
-}
-.colossus-page .novedades li {
-  font-size: 10px;
-}
-.colossus-page .novedades p {
-  padding: 0px 0px 0px 10px;
-  margin-bottom: 1rem;
-  font-size: 8px;
-}
-.colossus-page .requerimientos {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  background-color: aliceblue;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.colossus-page .requerimientos .titulo-requerimientos {
-  color: #235475;
-  font-size: 10px;
-  padding: 0px;
-  text-shadow: 1px 1px 4px #0093F5;
-}
-.colossus-page .requerimientos table {
-  text-align: center;
-}
-.colossus-page .requerimientos table th {
-  font-size: 10px;
-  padding: 10px;
-}
-.colossus-page .requerimientos table td {
-  font-size: 10px;
-}
-.colossus-page .merchandise .titulotienda {
-  font-weight: 700;
-  font-size: 50px;
-  padding: 20px;
-}
-.colossus-page .merchandise .titulo-filtro {
-  padding: 30px;
-}
-.colossus-page .merchandise .filtro-selector, .colossus-page .merchandise .filtro-label {
-  padding-right: 20px;
-}
-.colossus-page .merchandise .filtro-selector, .colossus-page .merchandise .filtro-label, .colossus-page .merchandise .titulo-filtro {
-  font-size: 30px;
-  height: 20px;
-  width: 20px;
-  margin-top: 40px;
-}
-.colossus-page .merchandise #cards {
-  justify-items: center;
-  grid-row: 2/3;
-}
-.colossus-page .merchandise #cards .zelda {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px 0px 40px 0px;
-}
-.colossus-page .merchandise #cards .zelda .card {
-  min-width: 25rem;
-  height: 500px;
-  width: 398.5px;
-}
-.colossus-page .merchandise #cards .zelda .card .card-title {
-  font-size: 30px;
-}
-.colossus-page .merchandise #cards .zelda .card .btn-lg {
-  font-size: 1.5rem;
-}
-.colossus-page .merchandise #cards .zelda .card .fa-regular {
-  font-size: 30px;
-  padding: 5px;
-}
-.colossus-page .merchandise #cards .zelda .card .fa-brands {
-  font-size: 30px;
-  padding: 5px;
-}
-.colossus-page .merchandise #cards .dont-starve {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px;
-}
-.colossus-page .merchandise #cards .colossus {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
