@@ -1843,7 +1843,7 @@ $grisclaro:rgb(186, 186, 186);
         }
     }
     .contacto{
-        height: 100%;
+        height: calc(100vh - 181px);
         width: 100%;
         background-image: url(../multimedia/patron2inv.png);
         background-size: cover;
@@ -1857,7 +1857,7 @@ $grisclaro:rgb(186, 186, 186);
             padding: 20px;
         }
         .redes-formulario{
-            width: 68%;
+            width: 75%;
             display: flex;
             place-content: center space-between;
             justify-content: space-between;
@@ -1883,10 +1883,10 @@ $grisclaro:rgb(186, 186, 186);
                     text-align: center;
                 }
                 .input-datos{
-                    font-size: 50px;
+                    font-size: 30px;
                     text-align: center;
-                    height: 100px;
-                    width: 1000px;
+                    height: 80px;
+                    width: 700px;
                     border: solid 5px $grisoscuro;
                     border-radius: 5px;
                 }
@@ -1897,10 +1897,10 @@ $grisclaro:rgb(186, 186, 186);
                 flex-direction: column;
                 align-items: center;
                 .textarea{
-                    font-size: 50px;
+                    font-size: 30px;
                     text-align: center;
-                    height: 400px;
-                    width: 1000px;
+                    height: 300px;
+                    width: 700px;
                     border: solid 5px $grisoscuro;
                     border-radius: 5px;
                 }
@@ -1911,7 +1911,7 @@ $grisclaro:rgb(186, 186, 186);
                 flex-direction:row;
                 align-items: center;
                 justify-content: space-evenly;
-                font-size: 40px;
+                font-size: 30px;
                 .enviar{
                     padding: 10px;
                     border-radius: 10px;
@@ -1931,8 +1931,8 @@ $grisclaro:rgb(186, 186, 186);
         }
         .contacto-zelda{
             position: absolute;
-            height: 1000px;
-            margin-left: 60%;
+            height: 800px;
+            translate: 500 800px;
             filter: opacity(0.3);
         }
         .redes{
@@ -1942,9 +1942,9 @@ $grisclaro:rgb(186, 186, 186);
             .insta{
                 background-color: $backgroundcolor;
                 color: $celestevibrante;
-                height: 150px;
-                width: 150px;
-                font-size: 100px;
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
                 text-align: center;
                 .titulo-insta{
                     display: none;
@@ -1974,9 +1974,9 @@ $grisclaro:rgb(186, 186, 186);
             .twitter{
                 background-color: $backgroundcolor;
                 color: $celestevibrante;
-                height: 150px;
-                width: 150px;
-                font-size: 100px;
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
                 text-align: center;
                 .titulo-twitter{
                     display: none;
@@ -2006,9 +2006,9 @@ $grisclaro:rgb(186, 186, 186);
             .youtube{
                 background-color: $backgroundcolor;
                 color: $celestevibrante;
-                height: 150px;
-                width: 150px;
-                font-size: 100px;
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
                 text-align: center;
                 .titulo-youtube{
                     display: none;
@@ -2038,9 +2038,9 @@ $grisclaro:rgb(186, 186, 186);
             .steam{
                 background-color: $backgroundcolor;
                 color: $celestevibrante;
-                height: 150px;
-                width: 150px;
-                font-size: 100px;
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
                 text-align: center;
                 .titulo-steam{
                     display: none;
@@ -2070,9 +2070,9 @@ $grisclaro:rgb(186, 186, 186);
             .twitch{
                 background-color: $backgroundcolor;
                 color: $celestevibrante;
-                height: 150px;
-                width: 150px;
-                font-size: 100px;
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
                 text-align: center;
                 .titulo-twitch{
                     display: none;
