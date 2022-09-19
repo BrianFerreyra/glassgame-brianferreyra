@@ -1602,6 +1602,185 @@ $grisclaro:rgb(186, 186, 186);
             }
         }
     }
+    .merchandise{
+        .titulotienda{
+            font-size: 30px;
+            padding: 10px;
+        }
+        .titulo-filtro{
+            font-size: 20px;
+            display: inline;
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .filtro-selector, .filtro-label{
+            padding-right: 20px;
+        }
+        .filtro-selector, .filtro-label, .titulo-filtro{
+            font-size: 18px;
+            height: 15px;
+            width: 15px;
+            margin-top: 10px;
+        }
+            .zelda {
+                .card{
+                    min-width: 2rem;
+                    margin: 3px;
+                    width: 18rem;
+                    .card-img-top{
+                        height: 200px;
+                        width: 168px;
+                    }
+                    .card-title{
+                        font-size: 20px;
+                    }
+                    .list-group-item{
+                        font-size: 20px;
+                        .fa-regular{
+                            font-size: 25px;
+                            padding: 0px 10px 0px 10px;
+                        }    
+                        .fa-brands{
+                            font-size: 25px;
+                            padding: 0px 10px 0px 10px; 
+                        }
+                        .btn-lg{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .dont-starve{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 40px;
+            }
+            .colossus{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 40px;
+            }
+                .card{
+                    color: #131313;
+                    text-shadow: 1px 0px 2px #0074C2;
+                    min-width: 45rem;
+                    background-color: #f75c19b5;
+                    border: 1px solid rgb(186, 186, 186);
+                        .card-img-top {
+                            height: 780px;
+                        }
+                        .card-title{
+                            font-family:'Kanit', sans-serif;
+                            font-style: bold;
+                            font-weight:400;
+                            font-size: 40px;
+                            text-align: center;
+                        }
+                        .card-body{
+                            flex: none;
+                        }
+                        .list-group-flush .list-group-item {
+                            border: none;
+                            color: #131313;
+                            font-family: 'Noto Serif Georgian', serif;
+                            font-weight:800;
+                            font-size: 20px;
+                            justify-self: center;
+                            text-align: center;
+                            .favoritos{
+                                font-size: 40px;
+                                border: transparent;
+                                background-color: transparent;
+                                background-size: 100px;
+                                display: flex;
+                                text-align: right;
+                                
+                                .fa-regular{
+                                    color: red;
+                                    cursor: pointer;
+                                    text-align: right;
+                                }
+                                .fa-solid{
+                                    display: none;
+                                }
+                            }
+                            .favoritos:focus{
+                                display: flex;
+                                .fa-regular{
+                                    display:none;
+                                }
+                                .fa-solid{
+                                    color:red;
+                                    display: block;
+                                    text-align:right;
+                                }
+                            }
+                        }
+                        .btn-group-lg>.btn, .btn-lg {
+                            background-color: #dbdbdb;
+                            border: rgb(186, 186, 186);
+                            color: #0074C2;
+                            padding: 0.5rem 1rem;
+                            font-size: 2.5rem;
+                            line-height: 1.5;
+                            border-radius: 0.3rem;
+                            width: -webkit-fill-available;
+                        }
+                }
+        }
+        .merch{
+            padding: 30px;
+            .new-arrivals{
+                font-family:'Kanit', sans-serif;
+                font-weight:bolder;
+                color:#F75A19;
+                text-shadow: 1px 0px 5px #0065A8;
+                text-align: center;
+                font-size: 80px;
+                padding: 40px;
+            }
+            .carousel-caption {
+                background-color: #f75c19b8;
+                border-radius: 5px;
+                color: #131313;
+                font-size: 20px;
+            }
+            .carousel-control-prev {
+                color: transparent;
+                text-align: center;
+            }
+            .carousel-control-next {
+                color: transparent;
+                text-align: center;
+            }
+        }
+        .boton-tienda{
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #235475;
+            border-radius: 100px;
+            border: solid 50px #235475;
+            line-height: 50px;
+            .fa-cart-shopping{
+                color: #F75A19;
+                font-size: 100px;
+            }  
+        }
+    }
+    #zelda:checked ~	#cards  .dont-starve, #zelda:checked ~	#cards .colossus{
+        display: none;
+    }
+    #dont-starve:checked ~	#cards .zelda, #dont-starve:checked ~	#cards .colossus{
+        display: none;
+    }
+    #colossus:checked ~ #cards .zelda, #colossus:checked ~ #cards .dont-starve{
+        display: none;
+    }
 }
 @media only screen and (min-width:971px) and (max-width:1400px) {
     .header{
