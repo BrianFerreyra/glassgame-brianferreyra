@@ -936,10 +936,10 @@
   text-align: center;
 }
 .contacto .formulario .datos .input-datos {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
-  height: 100px;
-  width: 1000px;
+  height: 80px;
+  width: 700px;
   border: solid 5px #131313;
   border-radius: 5px;
 }
@@ -950,10 +950,10 @@
   align-items: center;
 }
 .contacto .formulario .comentarios .textarea {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
-  height: 400px;
-  width: 1000px;
+  height: 300px;
+  width: 700px;
   border: solid 5px #131313;
   border-radius: 5px;
 }
@@ -963,7 +963,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 40px;
+  font-size: 30px;
 }
 .contacto .formulario .botones .enviar {
   padding: 10px;
@@ -982,8 +982,8 @@
 }
 .contacto .contacto-zelda {
   position: absolute;
-  height: 1000px;
-  margin-left: 60%;
+  height: 800px;
+  translate: 500px -700px;
   filter: opacity(0.3);
 }
 .contacto .redes {
@@ -1454,7 +1454,7 @@
   .juegos .contenedor-juegos .portadas .link-dst {
     background-image: url(../multimedia/Dst.jpg);
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: center;
     height: 200px;
     width: 350px;
     border-radius: 10px;
@@ -1825,6 +1825,265 @@
     width: 300px;
     border-radius: solid 5px;
     border-radius: 10px;
+  }
+  .contacto {
+    height: 100%;
+    width: 100%;
+    background-image: url(../multimedia/patron2inv.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .contacto .titulo-contactanos {
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 0px 3px #0093F5;
+    text-align: center;
+    padding: 20px;
+  }
+  .contacto .redes-formulario {
+    width: 68%;
+    display: flex;
+    place-content: center space-between;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+  .contacto .formulario {
+    margin: 30px;
+  }
+  .contacto .formulario .datos {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contacto .formulario .datos .titulo-datos {
+    font-size: 40px;
+    justify-self: left;
+    font-family: "Kanit", sans-serif;
+  }
+  .contacto .formulario .datos .label-datos {
+    font-size: 50px;
+    text-align: center;
+  }
+  .contacto .formulario .datos .input-datos {
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+    width: 1000px;
+    border: solid 5px #131313;
+    border-radius: 5px;
+  }
+  .contacto .formulario .comentarios {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto .formulario .comentarios .textarea {
+    font-size: 50px;
+    text-align: center;
+    height: 400px;
+    width: 1000px;
+    border: solid 5px #131313;
+    border-radius: 5px;
+  }
+  .contacto .formulario .botones {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40px;
+  }
+  .contacto .formulario .botones .enviar {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .contacto .formulario .botones .restablecer {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .contacto .formulario .input {
+    font-size: 35px;
+    padding: 5px;
+  }
+  .contacto .formulario .label {
+    height: 900px;
+  }
+  .contacto .contacto-zelda {
+    position: absolute;
+    height: 1000px;
+    margin-left: 60%;
+    filter: opacity(0.3);
+  }
+  .contacto .redes {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contacto .redes .insta {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .contacto .redes .insta .titulo-insta {
+    display: none;
+  }
+  .contacto .redes .insta:hover {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 50vh;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto .redes .insta:hover .titulo-insta {
+    padding: 20px;
+    display: flex;
+    color: #e7e7e7;
+    font-size: 80px;
+    text-shadow: 1px 0px 3px #0093F5;
+  }
+  .contacto .redes .twitter {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .contacto .redes .twitter .titulo-twitter {
+    display: none;
+  }
+  .contacto .redes .twitter:hover {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 55vh;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto .redes .twitter:hover .titulo-twitter {
+    padding: 20px;
+    display: flex;
+    color: #e7e7e7;
+    font-size: 65px;
+    text-shadow: 1px 0px 3px #0093F5;
+  }
+  .contacto .redes .youtube {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .contacto .redes .youtube .titulo-youtube {
+    display: none;
+  }
+  .contacto .redes .youtube:hover {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 50vh;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto .redes .youtube:hover .titulo-youtube {
+    padding: 20px;
+    display: flex;
+    color: #e7e7e7;
+    font-size: 80px;
+    text-shadow: 1px 0px 3px #0093F5;
+  }
+  .contacto .redes .steam {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .contacto .redes .steam .titulo-steam {
+    display: none;
+  }
+  .contacto .redes .steam:hover {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 50vh;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto .redes .steam:hover .titulo-steam {
+    padding: 20px;
+    display: flex;
+    color: #e7e7e7;
+    font-size: 80px;
+    text-shadow: 1px 0px 3px #0093F5;
+  }
+  .contacto .redes .twitch {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .contacto .redes .twitch .titulo-twitch {
+    display: none;
+  }
+  .contacto .redes .twitch:hover {
+    background-color: #252525;
+    color: #0093F5;
+    height: 150px;
+    width: 50vh;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto .redes .twitch:hover .titulo-twitch {
+    padding: 20px;
+    display: flex;
+    color: #e7e7e7;
+    font-size: 80px;
+    text-shadow: 1px 0px 3px #0093F5;
   }
 }
 

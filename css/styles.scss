@@ -929,10 +929,10 @@ $grisclaro:rgb(186, 186, 186);
                 text-align: center;
             }
             .input-datos{
-                font-size: 50px;
+                font-size: 30px;
                 text-align: center;
-                height: 100px;
-                width: 1000px;
+                height: 80px;
+                width: 700px;
                 border: solid 5px $grisoscuro;
                 border-radius: 5px;
             }
@@ -943,10 +943,10 @@ $grisclaro:rgb(186, 186, 186);
             flex-direction: column;
             align-items: center;
             .textarea{
-                font-size: 50px;
+                font-size: 30px;
                 text-align: center;
-                height: 400px;
-                width: 1000px;
+                height: 300px;
+                width: 700px;
                 border: solid 5px $grisoscuro;
                 border-radius: 5px;
             }
@@ -957,7 +957,7 @@ $grisclaro:rgb(186, 186, 186);
             flex-direction:row;
             align-items: center;
             justify-content: space-evenly;
-            font-size: 40px;
+            font-size: 30px;
             .enviar{
                 padding: 10px;
                 border-radius: 10px;
@@ -977,8 +977,8 @@ $grisclaro:rgb(186, 186, 186);
     }
     .contacto-zelda{
         position: absolute;
-        height: 1000px;
-        margin-left: 60%;
+        height: 800px;
+        translate: 500px -700px;
         filter: opacity(0.3);
     }
     .redes{
@@ -1451,7 +1451,7 @@ $grisclaro:rgb(186, 186, 186);
                 .link-dst{
                     background-image: url(../multimedia/Dst.jpg);
                     background-size: cover;
-                    background-position: 0px 0px;
+                    background-position: center;
                     height: 200px;
                     width: 350px;
                     border-radius: 10px;
@@ -1838,6 +1838,265 @@ $grisclaro:rgb(186, 186, 186);
                     width: 300px;
                     border-radius: solid 5px;
                     border-radius: 10px;
+                }
+            }
+        }
+    }
+    .contacto{
+        height: 100%;
+        width: 100%;
+        background-image: url(../multimedia/patron2inv.png);
+        background-size: cover;
+        background-position: bottom;
+        .titulo-contactanos{
+            font-size: 50px;
+            font-family: 'Kanit', sans-serif;
+            font-weight: bolder;
+            text-shadow:1px 0px 3px #0093F5; 
+            text-align: center;
+            padding: 20px;
+        }
+        .redes-formulario{
+            width: 68%;
+            display: flex;
+            place-content: center space-between;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+        }
+        .formulario{
+            margin: 30px;
+            .datos{
+                .titulo-datos{
+                    font-size: 40px;
+                    justify-self: left;
+                    font-family: 'Kanit', sans-serif;
+                }
+                font-size: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .label-datos{
+                    font-size: 50px;
+                    text-align: center;
+                }
+                .input-datos{
+                    font-size: 50px;
+                    text-align: center;
+                    height: 100px;
+                    width: 1000px;
+                    border: solid 5px $grisoscuro;
+                    border-radius: 5px;
+                }
+            }
+            .comentarios{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .textarea{
+                    font-size: 50px;
+                    text-align: center;
+                    height: 400px;
+                    width: 1000px;
+                    border: solid 5px $grisoscuro;
+                    border-radius: 5px;
+                }
+            }
+            .botones{
+                padding: 10px;
+                display: flex;
+                flex-direction:row;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 40px;
+                .enviar{
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                .restablecer{
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            }
+            .input {
+                font-size: 35px;
+                padding: 5px;
+            }
+            .label{
+                height: 900px;
+            }
+        }
+        .contacto-zelda{
+            position: absolute;
+            height: 1000px;
+            margin-left: 60%;
+            filter: opacity(0.3);
+        }
+        .redes{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .insta{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 150px;
+                font-size: 100px;
+                text-align: center;
+                .titulo-insta{
+                    display: none;
+                }
+            }
+            .insta:hover{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 50vh;
+                font-size: 100px;
+                text-align: right;
+                padding-right: 20px;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-insta{
+                    padding: 20px;
+                    display:flex;
+                    color: #e7e7e7;
+                    font-size: 80px;
+                    text-shadow:1px 0px 3px #0093F5; 
+                }
+            }
+            .twitter{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 150px;
+                font-size: 100px;
+                text-align: center;
+                .titulo-twitter{
+                    display: none;
+                }
+            }
+            .twitter:hover{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 55vh;
+                font-size: 100px;
+                text-align: right;
+                padding-right: 20px;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-twitter{
+                    padding: 20px;
+                    display:flex;
+                    color: #e7e7e7;
+                    font-size: 65px;
+                    text-shadow:1px 0px 3px #0093F5; 
+                }
+            }
+            .youtube{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 150px;
+                font-size: 100px;
+                text-align: center;
+                .titulo-youtube{
+                    display: none;
+                }
+            }
+            .youtube:hover{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 50vh;
+                font-size: 100px;
+                text-align: right;
+                padding-right: 20px;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-youtube{
+                    padding: 20px;
+                    display:flex;
+                    color: #e7e7e7;
+                    font-size: 80px;
+                    text-shadow:1px 0px 3px #0093F5; 
+                }
+            }
+            .steam{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 150px;
+                font-size: 100px;
+                text-align: center;
+                .titulo-steam{
+                    display: none;
+                }
+            }
+            .steam:hover{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 50vh;
+                font-size: 100px;
+                text-align: right;
+                padding-right: 20px;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-steam{
+                    padding: 20px;
+                    display:flex;
+                    color: #e7e7e7;
+                    font-size: 80px;
+                    text-shadow:1px 0px 3px #0093F5; 
+                }
+            }
+            .twitch{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 150px;
+                font-size: 100px;
+                text-align: center;
+                .titulo-twitch{
+                    display: none;
+                }
+            }
+            .twitch:hover{
+                background-color: $backgroundcolor;
+                color: $celestevibrante;
+                height: 150px;
+                width: 50vh;
+                font-size: 100px;
+                text-align: right;
+                padding-right: 20px;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-twitch{
+                    padding: 20px;
+                    display:flex;
+                    color: #e7e7e7;
+                    font-size: 80px;
+                    text-shadow:1px 0px 3px #0093F5; 
                 }
             }
         }
