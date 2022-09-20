@@ -1968,7 +1968,7 @@
   .juegos .contenedor-juegos .portadas .link-dst {
     background-image: url(../multimedia/Dst.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 0px 0px;
     height: 350px;
     width: 200px;
     border-radius: 10px;
