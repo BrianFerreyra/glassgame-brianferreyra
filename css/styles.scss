@@ -1961,7 +1961,7 @@ $grisclaro:rgb(186, 186, 186);
         width: 100%;
         .contenedor-titulo{
             text-align: center;
-            padding: 30px;
+            padding: 10px;
             .titulo-games{
                 font-size: 40px;
                 justify-self: center;
@@ -1977,7 +1977,7 @@ $grisclaro:rgb(186, 186, 186);
             .portadas{
                 display: flex;
                 justify-content: space-around;
-                padding: 50px;
+                padding: 30px;
                 align-content: stretch;
                 align-items: center;   
                 a{
@@ -1986,8 +1986,8 @@ $grisclaro:rgb(186, 186, 186);
                 .link-dst{
                     background-image: url(../multimedia/Dst.jpg);
                     background-size: cover;
-                    background-position: 0px 0px;
-                    height: 500px;
+                    background-position: center;
+                    height: 350px;
                     width: 200px;
                     border-radius: 10px;
                     margin: 0px 10px;
@@ -1996,7 +1996,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-image: url(../multimedia/zbotw.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 500px;
+                    height: 350px;
                     width: 200px;
                     border-radius: solid 5px;
                     border-radius: 10px;
@@ -2006,7 +2006,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-image: url(../multimedia/sotc.webp);
                     background-size: cover;
                     background-position: top;
-                    height: 500px;
+                    height: 350px;
                     width: 200px;
                     border-radius: solid 5px;
                     border-radius: 10px;
@@ -2016,7 +2016,7 @@ $grisclaro:rgb(186, 186, 186);
                     background-image: url(../multimedia/mgs1.jpg);
                     background-size: cover;
                     background-position: bottom;
-                    height: 500px;
+                    height: 350px;
                     width: 200px;
                     border-radius: solid 5px;
                     border-radius: 10px;
