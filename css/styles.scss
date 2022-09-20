@@ -1986,7 +1986,7 @@ $grisclaro:rgb(186, 186, 186);
                 .link-dst{
                     background-image: url(../multimedia/Dst.jpg);
                     background-size: cover;
-                    background-position: 0px 0px;
+                    background-position: center;
                     height: 350px;
                     width: 200px;
                     border-radius: 10px;
@@ -2197,106 +2197,6 @@ $grisclaro:rgb(186, 186, 186);
                 font-size: 20px;
             }
             .metalgear-parche{
-                font-size: 10px;
-                padding: 0px;
-            }
-            ul {
-                padding: 0px 0px 0px 20px;
-                font-size: 10px;
-                }
-                li{
-                    font-size: 10px;
-                }
-                p{
-                    padding: 0px 0px 0px 10px;
-                    margin-bottom: 1rem;
-                    font-size: 10px;
-                }
-            }
-        .requerimientos{
-            grid-column: 1/2;
-            grid-row: 4/5;
-            background-color: aliceblue;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-            padding: 20px;
-            .titulo-requerimientos{
-                color: #235475;
-                font-size: 20px;
-                padding: 0px;
-                text-shadow: 1px 1px 4px #0093F5;
-            }
-            table{
-                text-align: center;
-                th{
-                    font-size: 10px;
-                    padding: 10px;
-                }
-                td{
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-    .colossus-page{
-        .colossus-grid{
-            grid-template-columns: 1fr 1fr 1fr ;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            padding: 0px;
-            .colossus-boss{
-                grid-row: 1/3;
-                grid-column: 2/4;
-            }
-            .colossus-gif{
-                background-size: 750px 880px;
-                grid-row: 2/3;
-                grid-column: 2/4;
-            }
-            .colossus-img{
-                grid-row: 1/2;
-                grid-column: 1/3;
-                background-position: center;
-            }
-            .colossus-img2{
-                grid-row: 4/5;
-                grid-column: 2/5;
-            }
-            .colossus-texto{
-                grid-row: 2/3;
-                grid-column: 1/2;
-                font-size: 30px;
-                padding: 20px;
-                .colossus-titulo{
-                    font-size: 21px;
-                    font-weight: 600;
-                }
-                p{
-                    margin-top: 0;
-                    margin-bottom: 1rem;
-                    font-size: 10px;
-                }
-                .colossus-genre{
-                    font-size: 10px;
-                    padding: 10px 0px 10px 0px;
-                }
-            }
-            .colossus-img3{
-                grid-row: 3/4;
-                grid-column: 1/5;
-            }
-        }
-        .novedades{
-            grid-row: 1/2;
-            grid-column: 3/4;
-            font-size: 30px;
-            padding: 10px;
-            .titulo-novedades{
-                font-size: 20px;
-            }
-            .colossus-parche{
                 font-size: 10px;
                 padding: 0px;
             }
